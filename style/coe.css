@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body,html{
+	overflow: auto;
+}
+body{
+	background: #101;
+}
+
+.block{
+	/*float: left;*/
+	border: solid 2px #999;
+	margin: 5px;
+	border-radius: 5px;
+	background: rgba(100,100,100,0.5);
+	color: #88f;
+}
+input,select{
+	border:solid 1px #999;
+	background: #101;
+	color: #88f;
+}
+
+
+.block {
+	padding: 5px;
+}
+
+#main{
+	width: 600px;
+	margin: 0 auto;
+}
+
+/*隐藏显示用按钮*/
+.checkbutton{
+	width: 0;
+	height: 0;
+	margin: 2px;
+	padding: 10px !important;
+	background: #88f;
+	border-radius: 10px;
+	display: inline-block;
+	float: right;
+}
+.checkbutton div{
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin-left: -5px !important;
+	margin-top: -2.5px !important;
+	border-right: solid 5px transparent;
+	border-left: solid 5px transparent;
+}
+.checkbutton .hidden{
+	border-bottom: solid 5px #ccf;
+}
+.checkbutton .show{
+	border-top: solid 5px #ccf;
+}
+
+/*职业*/
+#class{
+}
+#class_lv_header span,#class_lv_body span,#class_lv_footer span{
+	width: 80px;
+	display: inline-block;
+	text-align: center;
+	line-height: 16px;
+	font-size: 14px;
+}
+#class_lv_header{
+	border-bottom:solid 1px #88f;
+}
+#class_lv_body div{
+	border-bottom:solid 1px #448;
+	line-height: 14px;
+	font-size: 12px;
+}
+#class_lv_footer{
+	border-top:solid 1px #88f;
+}
+
+/*宝石最外层div*/
+#gem .peibi{
+	width: 40px;
+}
+
+/*宝石颜色种类div*/
+.gem_class div{
+	overflow: hidden;
+}
+.gem_type .name{
+	line-height: 35px;
+	width: 15px;
+	padding: 2px;
+}
+.gem_type div{
+	float: left;
+}
+.gem_item{
+	margin: 20px;
+	overflow: hidden;
+}
+
+/*宝石详细div*/
+.gem_data div div{
+	float: none;
+	padding: 5px 10px;
+	text-align: center;
+	height: 20px;
+}
+.gem_data div .jump{
+	height: 75px;
+	overflow: hidden;
+	width: 20px;
+}
+.jump input{
+	margin-top:8px;
+	transform-origin: 10px 10px;
+	transform: rotate(90deg);
+	width: 70px;
+}
+.gem_attribute_type .gem_attribute_select{
+	width: 100%;
+}
+
+/*专精*/
+#mastery input{
+	width: 50px;
+}
+#mastery input:nth-child(2n){
+	width: 100px;
+}
+
+/*结果*/
+#res div{
+	overflow: hidden;
+}
+.attribute_item{
+	display: inline-block;
+	width: 170px;
+	height: 14px;
+	border: 1px solid #88f;
+	border-radius: 14px;
+	line-height: 14px;
+	font-size: 12px;
+}
+.attribute_item span{
+	display: inline-block;
+}
+.attribute_name{
+	width: 80px;
+	text-align: right;
+}
+.attribute_name::after{
+	content:":";
+	margin-left: 2px;
+	margin-right: 2px;
+}

@@ -1,0 +1,251 @@
+{
+	"legendary": [{
+		"name": "Fortras, the Herald of Battle ",
+		"attribute": {
+			"health_regeneration_": 3,
+			"physical_damage": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Albairn, Voice of Dawn ",
+		"attribute": {
+			"critical_hit_": 0.6,
+			"max_health": 1000,
+			"damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Selene the Celestial Storm ",
+		"attribute": {
+			"maximum_health": 1000,
+			"critical_hit_": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Yorinn, the Dusk Shadow ",
+		"attribute": {
+			"maximum_health": 1000,
+			"critical_damage": 10,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Erel, the Ironbolt ",
+		"attribute": {
+			"maximum_health": 1000,
+			"health_regeneration": 1750,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Panatea, the Partifier ",
+		"attribute": {
+			"attack_speed_": 7,
+			"magic_damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Flakbeard, the Relentless ",
+		"attribute": {
+			"critical_damage_": 10,
+			"max_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Erimatra, Scourge of the Everdark ",
+		"attribute": {
+			"magic_damage": 250,
+			"critical_hit_": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Ludini, Patron of Playfulness ",
+		"attribute": {
+			"jump": 3,
+			"magic_find": 100
+		},
+		"has": true
+	}, {
+		"name": "Dracocolatl, the Mellower ",
+		"attribute": {
+			"health_regeneration_": 5,
+			"maximum_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Drak-O-Lantern ",
+		"attribute": {
+			"critical_hit_": 0.6,
+			"damage": 250,
+			"jump": 1,
+			"max_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Inora, Flame of Enlightenment ",
+		"attribute": {
+			"maximum_health_": 10,
+			"attack_speed_": 3,
+			"physical_damage": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Thallasion, Shaper of the Currents ",
+		"attribute": {
+			"physical_damage": 250,
+			"health_regeneration": 1800,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Tysorion, Steward of New Beginnings ",
+		"attribute": {
+			"critical_hit_": 0.3,
+			"critical_damage_": 3,
+			"max_health": 1000,
+			"physical_damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Tannenbomber, the Harbinger of Tidings ",
+		"attribute": {
+			"critical_hit_": 0.8,
+			"magic_damage": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Crisopeia, the Crucible of Souls ",
+		"attribute": {
+
+		},
+		"has": true
+	}, {
+		"name": "Baesmuth, the Shaper's Gift ",
+		"attribute": {},
+		"has": true
+	}, {
+		"name": "Rachnaphon, the Silent Spectator ",
+		"attribute": {},
+		"has": true
+	}, {
+		"name": "Petallura, Nature's Beckoning ",
+		"attribute": {},
+		"has": true
+	}, {
+		"name": "Miraldis, the Primordial Preserver ",
+		"attribute": {
+			"max_health_": 10
+		},
+		"has": true
+	}, {
+		"name": "Wyntegra, Galenor's Pride ",
+		"attribute": {},
+		"has": true
+	}, {
+		"name": "Sarsaponia, the Pristine ",
+		"attribute": {
+			"maximum": 1000,
+			"maximum_health": 1000,
+			"critical_damage_": 10
+		},
+		"has": true
+	}, {
+		"name": "Almakhestia, Host of Starfire ",
+		"attribute": {
+			"maximum_health": 1000,
+			"energy_regeneration_": 3,
+			"physical_damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Aurym, Keeper of Histories ",
+		"attribute": {
+			"attack_speed_": 7,
+			"max_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Blocktron, the Guardian Beyond the Sky ",
+		"attribute": {
+			"maximum_health": 1000,
+			"maximum_health_": 10,
+			"physical_damage": 500
+		},
+		"has": true
+	}, {
+		"name": "Tanbleddyn of the Western Peaks ",
+		"attribute": {},
+		"has": true
+	}, {
+		"name": "Fulguras, the Lightning ",
+		"attribute": {},
+		"has": true
+	}, {
+		"name": "Xendri, the Arc Tempest ",
+		"attribute": {
+			"maximum_energy": 10,
+			"energy_regeneration_": 3,
+			"max_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Carys, Seraph of the Golden Vale ",
+		"attribute": {
+			"max_health_": 10,
+			"critical_damage_": 8,
+			"jump": 2,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Norari, the Wayward Spear ",
+		"attribute": {
+			"max_health": 1000,
+			"energy_regeneration_": 5,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Typhandir, the Sundered Shield ",
+		"attribute": {
+			"max_health_": 10,
+			"attack_speed_": 7,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Jhorondir, Arms of the Goddess ",
+		"attribute": {
+			"max_health": 1000,
+			"max_health_": 10,
+			"critical_damage_": 3,
+			"attack_speed_": 3,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Phyconidia, Sower of the Sandsea ",
+		"attribute": {
+			"max_health": 1000,
+			"attack_speed_": 3,
+			"critical_hit_": 0.2,
+			"physical_damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}]
+}

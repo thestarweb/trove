@@ -1,0 +1,278 @@
+
+	<link rel="stylesheet" type="text/css" href="<?php echo $system->ini_get('styles_url');?>coe.css">
+	<script type="text/javascript">
+		function DATA_BASE(){
+			return "<?php echo URLROOT; ?>data/";
+		}
+		//伤害类型相关功能定义区，避免模块间直接调用时一个目标模块未加载或加载失败报未定义错误
+		//为了方便，我们这还为别的数据提供接口
+		globla_function=(function(){
+			var damage_type="physical_damage";
+			var listeners=[];
+			return {
+				is_damage(name){
+					if(name=="magic_damage"||name=="physical_damage") return true;
+					else return false;
+				},
+				add_listener:function(fun){
+					listeners[listeners.length]=fun;
+				},
+				set_damage_type:function(name){
+					if(this.is_damage(name)){
+						if(name!=damage_type){
+							damage_type=name;
+							for(var i=0;i<listeners.length;i++){
+								//将伤害改变的事件传递给已注册的回调
+								listeners[i]("damage",name);
+							}
+						}
+					}
+				},
+				get_damage_type:function(){
+					return damage_type;
+				},
+				get_attribute_type:function(name){//名字到类型（魔法伤害/物理伤害）转（伤害）
+					if(this.is_damage(name)) return "damage";
+					else return name;
+				},
+				get_attribute_name:function(type){//类型到名字（伤害）转（魔法伤害/物理伤害）
+					if(type=="damage") return this.get_damage_type();
+					else return type;
+				},
+				display_attributes:function(attribute,div){
+					var str="";
+					for(var i in attribute){
+						if(attributes[i]){
+							//str+="<div class='attribute_item'><span class='attribute_name'>"+attributes[i].name+"</span><span class='attribute_value'>"+attribute[i].toFixed(attributes[i].fixed)+"</span></div>";
+							str+=myScript.template_get_html("attribute_item",{name:attributes[i].name,value:attribute[i].toFixed(attributes[i].fixed)});
+						}
+					}
+					div.innerHTML=str;
+				},
+				get_attributes:function(list,tar_div,all){
+					var attribute={};
+					for(var i=0;i<list.length;i++){
+						if(list[i].get_attribute){
+							var a=list[i].get_attribute();
+							for(var j in a){
+								if(attribute[j]) attribute[j]+=a[j];
+								else attribute[j]=a[j];
+							}
+						}
+					}
+					if(tar_div){
+						this.display_attributes(attribute,tar_div);
+					}
+					return attribute;
+				}
+			}
+		})();
+	</script>
+	<div id="main">
+		<div id="class" class="type_root">
+			<div class="block">
+				<div>选择职业：<select id="select_class"></select><div class="checkbutton"><div class="show"></div></div></div>
+				<div style="display: none;">
+					<div id="class_lv_header"></div>
+					<div id="class_lv_body"></div>
+					<div id="class_lv_footer"></div>
+				</div>
+			</div>
+		</div>
+		<div id="gem" class="type_root block">
+			<div>
+				宝石数据
+				<span id="main_peibi">
+					<input class="peibi" type="number" min="0"/>
+					<input class="peibi" type="number" disabled="disabled"/>
+					<input class="peibi" type="number" min="0"/>
+					<input class="peibi" type="number" disabled="disabled"/>
+					+
+					<input class="peibi" type="number" min="0"/>
+					<input class="peibi" type="number" disabled="disabled"/>
+					<input class="peibi" type="number" min="0"/>
+					<input class="peibi" type="number" disabled="disabled"/>
+				</span>
+				<div class="checkbutton" cid="gem_body"><div class="show"></div></div>
+			</div>
+			<div id="gem_body" style="display: none;">
+				<div class="block">
+					<div>配比测试单元(暂未完成)<div class="checkbutton"><div class="show"></div></div></div>
+					<div style="display: none;">
+						<div>
+							主属性
+							<select id="gem_paibi_main" class="gem_attribute_select" selectedOptions="damage"></select>
+							从属性
+							<select id="gem_paibi_o" class="gem_attribute_select" selectedOptions="critical_damage"></select>
+						</div>
+					</div>
+				</div>
+				<div id="gem_data"></div>
+			</div>
+			<div id="gem_res"></div>
+		</div>
+		<div id="dragon" class="type_root block">
+			<div>龙<div class="checkbutton"><div class="show"></div></div></div>
+			<div id="dragon_data" style="display: none;"></div>
+			<div id="dragon_res"></div>
+		</div>
+		<div id="mastery" class="type_root block">
+			<div>专精</div>
+			<div>等级 <input type="number" id="mastery_lv" value="600"/>专精点数 <input type="number" id="mastery_point"></div>
+		</div>
+		<div id="equipment" class="type_root block">
+			<div>装备<div class="checkbutton"><div class="show"></div></div></div>
+			<div></div>
+		</div>
+		<div id="" class="block">
+			<div>宠物<div class="checkbutton"><div class="show"></div></div></div>
+			<div></div>
+		</div>
+		<div id="club" class="type_root block">
+			<div>工会<div class="checkbutton"><div class="show"></div></div></div>
+			<div></div>
+		</div>
+		<div id="res" class="block">
+			<div id="res_o"></div>
+			<div>
+				<div class="attribute_item"><span class="attribute_name">coe</span><span class="attribute_value" id="res_coe">0</span></div>
+			</div>
+		</div>
+	</div>
+
+
+	<templates>
+		<!--宝石颜色模板-->
+		<template name="gem_class">
+			<div class="gem_class block">
+				<div class="type_name">
+					<span>{name}</span>
+					<span class="gem_peibi">
+						<input class="peibi" type="number" min="0"/>
+						<input class="peibi" type="number" disabled="disabled"/>
+						<input class="peibi" type="number" min="0"/>
+						<input class="peibi" type="number" disabled="disabled"/>
+					</span>
+					钻龙 <input class="has_dragon" type="checkbox" {dragon}/>
+					<div class="checkbutton"><div class="show"></div></div>
+				</div>
+				<div style="display: none;">
+					<div class="gem_type">
+						<div class="name">大宝石</div>@__gem__#type=empowered#cosmic_gem={cosmic_gem}
+					</div>
+					<div class="gem_type">
+						<div class="name">小宝石</div>@__gem__#type=normal#cosmic_gem={cosmic_gem}
+					</div>
+					<div class="gem_type">
+						<div class="name">小宝石</div>@__gem__#type=normal#cosmic_gem={cosmic_gem}
+					</div>
+				</div>
+			</div>
+		</template>
+		<!--宝石属性模板-->
+		<template name="gem">
+			<div class="gem_data" type="{type}">
+				<div>
+					<div></div>
+					<div>属性1</div>
+					<div>属性2</div>
+					<div>属性3</div>
+				</div>
+				<div class="gem_attribute_type">
+					<div>宝石属性</div>
+					<div>
+						<select class="gem_attribute_select" selectedOptions="damage"></select>
+					</div>
+					<div>
+						<select class="gem_attribute_select" selectedOptions="critical_damage"></select>
+					</div>
+					<div>
+						<select class="gem_attribute_select" cosmic_gem="{cosmic_gem}" selectedOptions="critical_hit"></select>
+					</div>
+				</div>
+				<div>
+					<div>跳1</div>
+					<div class="jump"><input type="range" min="0" max="2" value="0" step="1"/></div>
+				</div>
+				<div>
+					<div>跳2</div>
+					<div class="jump"><input type="range" min="0" max="2" value="0" step="1"/></div>
+				</div>
+				<div>
+					<div>跳3</div>
+					<div class="jump"><input type="range" min="0" max="2" value="0" step="1"/></div>
+				</div>
+				<div class="gem_res">
+					<div>宝石结论</div>
+					<div><span>0</span></div>
+					<div><span>0</span></div>
+					<div><span>0</span></div>
+				</div>
+			</div>
+		</template>
+		<template name="attribute_item">
+			<div class="attribute_item"><span class="attribute_name">{name}</span><span class="attribute_value">{value}</span></div>
+		</template>
+		<template name="dragon_type">
+			<div class="block">
+				<div>{name}<div class="checkbutton"><div class="show"></div></div></div>
+				<div class="dragon_data" style="display: none;"></div>
+			</div>
+		</template>
+	</templates>
+	<script type="text/javascript">
+		//模板初始化
+		myScript.template_init();
+
+		var attributes={
+			physical_damage:{name:"物理伤害",fixed:0,gem:true},
+			magic_damage:{name:"魔法伤害",fixed:0,gem:true},
+			damage:{name:"伤害"},
+			damage_:{name:"伤害加成",fixed:0},
+			critical_damage:{name:"暴击伤害",fixed:2,gem:true},
+			critical_hit:{name:"暴击率",fixed:2,gem:true},
+			max_health:{name:"最大生命",fixed:0,gem:true},
+			max_health_:{name:"百分比生命",fixed:0,gem:true},
+			health_regeneration:{name:"生命恢复"},
+			health_regeneration_:{name:"生命恢复%"},
+			energy_regeneration_:{name:"回能"},
+			lasermancy:{name:"镭射"},
+			jump:{name:"跳跃"},
+			light:{name:"光",fixed:0,gem:false,cosmic_gem:true},
+			magic_find:{name:"魔寻",fixed:0,gem:false},
+		};
+		var types=$(".type_root");
+		for(var i=0;i<types.length;i++){
+			$.set("script",$("body")[0]).src="<?php echo URLROOT;?>script/"+types[i].id+".js"
+		}
+	</script>
+	<!-- <script type="text/javascript" src="./class.js"></script>
+	<script type="text/javascript" src="./gem.js"></script>
+	<script type="text/javascript">
+	</script>
+	<script type="text/javascript" src="./equipment.js"></script> -->
+	<script type="text/javascript" src="../script/res.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var buttons=$(".checkbutton");
+			var button_click_even=function(){
+				if(this.firstElementChild.className=="show"){
+					this.firstElementChild.className="hidden";
+					(this.getAttribute("cid")?$("#"+this.getAttribute("cid")):this.parentElement.nextElementSibling).style.display="";
+				}else{
+					this.firstElementChild.className="show";
+					(this.getAttribute("cid")?$("#"+this.getAttribute("cid")):this.parentElement.nextElementSibling).style.display="none";
+				}
+			}
+			var set_ev=function(){
+				for(var i=0;i<buttons.length;i++){
+					//if(buttons[i].getAttribute("cid")){
+						buttons[i].onclick=button_click_even
+					//}
+				}
+				setTimeout(set_ev,1000);//解决通过异步加载数据的方式动态生成的内容无法被绑定的问题
+			}
+			set_ev();
+
+		});
+	</script>
