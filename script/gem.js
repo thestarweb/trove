@@ -298,7 +298,7 @@
 					var ca=c[i].get_attribute();
 					for(var j in ca){
 						var attribute=ca[j];
-						if(self.has_dragon()) attribute*=1.2;//有钻龙时属性提升
+						if(self.has_dragon()) attribute*=1.1;//有钻龙时属性提升
 						if(attribute_cache[j]) attribute_cache[j]+=attribute;
 						else attribute_cache[j]=attribute;
 					}
