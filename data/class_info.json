@@ -1,6 +1,6 @@
 {
 	"Gunslinger":{
-		"demage_type":"magic_damage",
+		"damage_type":"magic_damage",
 		"levup":[
 			{},
 			{},
