@@ -130,7 +130,10 @@
 		</div>
 		<div id="club" class="type_root block">
 			<div>工会<div class="checkbutton"><div class="show"></div></div></div>
-			<div></div>
+			<div style="display: none;">
+				<div id="club_body"></div>
+				<div id="club_res"></div>
+			</div>
 		</div>
 		<div id="res" class="block">
 			<div id="res_o"></div>
@@ -218,6 +221,17 @@
 				<div>{name}<div class="checkbutton"><div class="show"></div></div></div>
 				<div class="dragon_data" style="display: none;"></div>
 			</div>
+		</template>
+		<template name="club_item">
+				<div>
+					{name}
+					<select class="club_select">
+						<option value="-1">无</option>
+						<option value="0">1级</option>
+						<option value="1">2级</option>
+						<option value="2" selected>3级</option>
+					</select>
+				</div>
 		</template>
 	</templates>
 	<script type="text/javascript">
