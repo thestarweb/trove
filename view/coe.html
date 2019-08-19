@@ -253,26 +253,18 @@
 	<script type="text/javascript" src="./equipment.js"></script> -->
 	<script type="text/javascript" src="../script/res.js"></script>
 	<script type="text/javascript">
-		$(function(){
-			var buttons=$(".checkbutton");
-			var button_click_even=function(){
-				if(this.firstElementChild.className=="show"){
-					this.firstElementChild.className="hidden";
-					(this.getAttribute("cid")?$("#"+this.getAttribute("cid")):this.parentElement.nextElementSibling).style.display="";
+		document.addEventListener("click",function(ev){//折叠/展开按钮的事件代理，由于不是在模块内部，使用addEventListener防止和其他模块冲突
+			//判断事件是否在按钮上并获取按钮节点
+			if(ev.target.className=="checkbutton") b=ev.target;
+			else if(ev.target.parentNode.className=="checkbutton") b=ev.target.parentNode;
+			if(b){//说明找到并成功获取了按钮节点
+				if(b.firstElementChild.className=="show"){
+					b.firstElementChild.className="hidden";
+					(b.getAttribute("cid")?$("#"+b.getAttribute("cid")):b.parentElement.nextElementSibling).style.display="";
 				}else{
-					this.firstElementChild.className="show";
-					(this.getAttribute("cid")?$("#"+this.getAttribute("cid")):this.parentElement.nextElementSibling).style.display="none";
+					b.firstElementChild.className="show";
+					(b.getAttribute("cid")?$("#"+b.getAttribute("cid")):b.parentElement.nextElementSibling).style.display="none";
 				}
 			}
-			var set_ev=function(){
-				for(var i=0;i<buttons.length;i++){
-					//if(buttons[i].getAttribute("cid")){
-						buttons[i].onclick=button_click_even
-					//}
-				}
-				setTimeout(set_ev,1000);//解决通过异步加载数据的方式动态生成的内容无法被绑定的问题
-			}
-			set_ev();
-
 		});
 	</script>
