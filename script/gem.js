@@ -24,18 +24,18 @@
 		empowered:{
 			//物理
 			physical_damage:{
-				base:6323,
-				jump:3733
+				base:6314,
+				jump:3724
 			},
 			//魔法
 			magic_damage:{
-				base:6323,
-				jump:3733
+				base:6314,
+				jump:3724
 			},
 			//爆伤
 			critical_damage:{
-				base:90.3,
-				jump:53.4
+				base:90.2,
+				jump:53.2
 			},
 			critical_hit:{
 				base:9,
