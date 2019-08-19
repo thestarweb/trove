@@ -8,7 +8,6 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 		self.innerHTML=myScript.template_get_html("dragon_type",{name:i});
 		self.className="dragon_type";
 		var data_div=myScript.$get(".dragon_data",self)[0];
-		console.log(data_div);
 		for(var j=0;j<dragon[i].length;j++){
 			var item=$.set("div",data_div);
 			item.className="dragon_item block";
