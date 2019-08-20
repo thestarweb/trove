@@ -10,7 +10,7 @@
 			var damage_type="physical_damage";
 			var listeners=[];
 			return {
-				is_damage(name){
+				is_damage:function(name){
 					if(name=="magic_damage"||name=="physical_damage") return true;
 					else return false;
 				},
