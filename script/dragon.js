@@ -23,7 +23,7 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 	}
 	$("#dragon").run=function(){
 		attribute_cache=globla_function.get_attributes($(".dragon_item"),$("#dragon_res"));
-		this.update();
+		if(this.update)this.update();
 	}
 
 	//绑定获取数据的函数至dom上
