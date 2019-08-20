@@ -1,6 +1,6 @@
 {
 	"type":{
-		"wq":{
+		"weapons":{
 			"crystal":[
 				{
 					"as":-1,
@@ -28,7 +28,7 @@
 				}
 			],
 		},
-		"hat":{
+		"helmets":{
 			"crystal":[
 				{
 					"as":-1,
@@ -56,7 +56,7 @@
 				}
 			],
 		},
-		"face":{
+		"masks":{
 			"crystal":[
 				{
 					"as":-1,
@@ -83,6 +83,15 @@
 					"default":2
 				}
 			]
+		},
+		"ring":{
+			"stellar_rig":[
+				{
+					"as":-1,
+					"attributes":["magic_damage","physical_damage"],
+					"default":0
+				}
+			]
 		}
 	},
 	"data":{
@@ -92,6 +101,11 @@
 				{"max_health":1000,"damage":10400},
 				{"critical_damage":42.9,"energy_regeneration":100,"attack_speed":10,"move_speed":10,"attack_speed":10},
 				{"critical_hit":42.9,"jump":10,"magic_find":110,"magic_damage":3432,"physical_damage":3432}
+			]
+		},
+		"stellar_rig":{
+			"5star":[
+				{"magic_damage":5955,"physical_damage":5955}
 			]
 		}
 	}

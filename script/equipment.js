@@ -68,7 +68,7 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 		}
 
 		item.update=function(){
-			attribute_cache=globla_function.get_attributes($(".equipment_item"));
+			attribute_cache=globla_function.get_attributes($(".equipment_item"),$("#equipment_res"));
 			console.log(attribute_cache);
 		}
 
