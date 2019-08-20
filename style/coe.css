@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	position: relative;
 }
 body,html{
 	overflow: auto;
@@ -133,6 +134,23 @@ input,select{
 }
 #mastery input:nth-child(2n){
 	width: 100px;
+}
+
+/*装备*/
+.equipment_item div div{
+	float: left;
+	margin:4px;
+}
+.equipment_item input{
+	width: 40px;
+	height: 10px;
+}
+.equipment_name{
+	width: 50px;
+	text-align: right;
+}
+.equipment_attributes select{
+	width: 150px;
 }
 
 /*结果*/

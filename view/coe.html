@@ -122,7 +122,7 @@
 		</div>
 		<div id="equipment" class="type_root block">
 			<div>装备<div class="checkbutton"><div class="show"></div></div></div>
-			<div></div>
+			<div id="equipment_body" style="display: none;"></div>
 		</div>
 		<div id="" class="block">
 			<div>宠物<div class="checkbutton"><div class="show"></div></div></div>
@@ -241,6 +241,28 @@
 					</select>
 				</div>
 		</template>
+		<template name="equipment_item">
+			<div class="block">
+				<div class="equipment_item_base">
+					<div class="equipment_name">{name}</div>
+					<div>
+						<select class="equipment_type">{typedata}</select>
+						<select class="equipment_lv"></select>
+					</div>
+				</div>
+				<div class="equipment_attributes"></div>
+			</div>
+		</template>
+		<template name="equipment_attribute">
+			<p>
+				<select>
+					{option}
+				</select>
+				珍珠
+				<input type="range" min="0" max="2" value="2" step="1"/>
+				<span>output</span>
+			</p>
+		</template>
 	</templates>
 	<script type="text/javascript">
 		//模板初始化
@@ -262,17 +284,14 @@
 			jump:{name:"跳跃"},
 			light:{name:"光",fixed:0,gem:false,cosmic_gem:true},
 			magic_find:{name:"魔寻",fixed:0,gem:false},
+			attack_speed:{name:"攻速"},
+			move_speed:{name:"攻速"}
 		};
 		var types=$(".type_root");
 		for(var i=0;i<types.length;i++){
 			$.set("script",$("body")[0]).src="<?php echo URLROOT;?>script/"+types[i].id+".js"
 		}
 	</script>
-	<!-- <script type="text/javascript" src="./class.js"></script>
-	<script type="text/javascript" src="./gem.js"></script>
-	<script type="text/javascript">
-	</script>
-	<script type="text/javascript" src="./equipment.js"></script> -->
 	<script type="text/javascript" src="../script/res.js"></script>
 	<script type="text/javascript">
 		document.addEventListener("click",function(ev){//折叠/展开按钮的事件代理，由于不是在模块内部，使用addEventListener防止和其他模块冲突
