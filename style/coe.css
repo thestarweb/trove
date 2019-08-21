@@ -35,6 +35,7 @@ input,select{
 	margin: 0 auto;
 }
 
+
 /*隐藏显示用按钮*/
 .checkbutton{
 	width: 0;
@@ -60,6 +61,13 @@ input,select{
 }
 .checkbutton .show{
 	border-top: solid 5px #ccf;
+}
+/*模块状态标识*/
+.type_root[script_error]{
+	background: rgba(100,0,0,0.5);
+	border: solid 2px #f99;
+	color: #555;
+	filter: grayscale(60%);
 }
 
 /*职业*/
@@ -148,6 +156,12 @@ input,select{
 .equipment_name{
 	width: 50px;
 	text-align: right;
+}
+.equipment_type{
+	width: 80px;
+}
+.equipment_lv{
+	width: 80px;
 }
 .equipment_attributes select{
 	width: 150px;
