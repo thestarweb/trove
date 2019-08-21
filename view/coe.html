@@ -122,12 +122,12 @@
 		</div>
 		<div id="equipment" class="type_root block">
 			<div>装备<div class="checkbutton"><div class="show"></div></div></div>
-			<div style="display: none;">
+			<div id="equipment_data" style="display: none;">
 				<div id="equipment_body"></div>
 				<div id="equipment_res"></div>
 			</div>
 		</div>
-		<div id="" class="block">
+		<div id="allies" class="type_root block">
 			<div>宠物<div class="checkbutton"><div class="show"></div></div></div>
 			<div></div>
 		</div>
@@ -137,6 +137,10 @@
 				<div id="club_body"></div>
 				<div id="club_res"></div>
 			</div>
+		</div>
+		<div id="foot" class="type_root block">
+			<div>食物<div class="checkbutton"><div class="show"></div></div></div>
+			<div></div>
 		</div>
 		<div id="res" class="block">
 			<div class="block">
@@ -292,7 +296,14 @@
 		};
 		var types=$(".type_root");
 		for(var i=0;i<types.length;i++){
-			$.set("script",$("body")[0]).src="<?php echo URLROOT;?>script/"+types[i].id+".js"
+			var s=$.set("script",$("body")[0]);
+			s.src="<?php echo URLROOT;?>script/"+types[i].id+".js";
+			s.onerror=( function(name){
+				return function(){
+					console.log("can not load the script for "+name);
+					$("#"+name).setAttribute("script_error","");
+				}
+			})(types[i].id);
 		}
 	</script>
 	<script type="text/javascript" src="../script/res.js"></script>
