@@ -14,15 +14,14 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 
 		item.type=i;
 		item.onchange=function(ev){
-			console.log("hello");
 			var target;
 			if(ev) target=ev.target;
 			else target=myScript.$get(".equipment_type",this)[0];
 
 			if(target.className=="equipment_type"){
 
-				var display=$("#equipment_body").style.display;
-				$("#equipment_body").style.display="";
+				var display=$("#equipment_data").style.display;
+				$("#equipment_data").style.display="";
 
 				var option="";
 				for(var j in equipment.data[target.value]){
@@ -43,11 +42,10 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 					data+=myScript.template_get_html("equipment_attribute",{option:option});
 				}
 				myScript.$get(".equipment_attributes",this)[0].innerHTML=data;
-
 				//设置高度，纵向居中
 				myScript.$get(".equipment_item_base",this)[0].style.lineHeight=(this.offsetHeight-40)+"px";
 
-				$("#equipment_body").style.display=display;
+				$("#equipment_data").style.display=display;
 			}
 
 			var list=myScript.$get(".equipment_attributes p",this);
@@ -69,7 +67,6 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 
 		item.update=function(){
 			attribute_cache=globla_function.get_attributes($(".equipment_item"),$("#equipment_res"));
-			console.log(attribute_cache);
 		}
 
 		item.onchange();
