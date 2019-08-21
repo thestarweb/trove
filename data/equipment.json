@@ -90,6 +90,11 @@
 					"as":-1,
 					"attributes":["magic_damage","physical_damage"],
 					"default":0
+				},
+				{
+					"as":-1,
+					"attributes":["magic_find"],
+					"default":0
 				}
 			]
 		}
@@ -105,7 +110,8 @@
 		},
 		"stellar_rig":{
 			"5star":[
-				{"magic_damage":5955,"physical_damage":5955}
+				{"magic_damage":5955,"physical_damage":5955},
+				{"magic_find":111}
 			]
 		}
 	}
