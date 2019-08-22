@@ -1,6 +1,6 @@
 {
 	"legendary": [{
-		"name": "Fortras, the Herald of Battle ",
+		"name": "Fortras, the Herald of Battle",
 		"attribute": {
 			"health_regeneration_": 3,
 			"physical_damage": 500,
@@ -8,98 +8,98 @@
 		},
 		"has": true
 	}, {
-		"name": "Albairn, Voice of Dawn ",
+		"name": "Albairn, Voice of Dawn",
 		"attribute": {
-			"critical_hit_": 0.6,
+			"critical_hit": 0.6,
 			"max_health": 1000,
 			"damage": 250,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Selene the Celestial Storm ",
+		"name": "Selene the Celestial Storm",
 		"attribute": {
-			"maximum_health": 1000,
-			"critical_hit_": 1,
+			"max_health": 1000,
+			"critical_hit": 1,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Yorinn, the Dusk Shadow ",
+		"name": "Yorinn, the Dusk Shadow",
 		"attribute": {
-			"maximum_health": 1000,
+			"max_health": 1000,
 			"critical_damage": 10,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Erel, the Ironbolt ",
+		"name": "Erel, the Ironbolt",
 		"attribute": {
-			"maximum_health": 1000,
+			"max_health": 1000,
 			"health_regeneration": 1750,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Panatea, the Partifier ",
+		"name": "Panatea, the Partifier",
 		"attribute": {
-			"attack_speed_": 7,
+			"attack_speed": 7,
 			"magic_damage": 250,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Flakbeard, the Relentless ",
+		"name": "Flakbeard, the Relentless",
 		"attribute": {
-			"critical_damage_": 10,
+			"critical_damage": 10,
 			"max_health": 1000,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Erimatra, Scourge of the Everdark ",
+		"name": "Erimatra, Scourge of the Everdark",
 		"attribute": {
 			"magic_damage": 250,
-			"critical_hit_": 1,
+			"critical_hit": 1,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Ludini, Patron of Playfulness ",
+		"name": "Ludini, Patron of Playfulness",
 		"attribute": {
 			"jump": 3,
 			"magic_find": 100
 		},
 		"has": true
 	}, {
-		"name": "Dracocolatl, the Mellower ",
+		"name": "Dracocolatl, the Mellower",
 		"attribute": {
 			"health_regeneration_": 5,
-			"maximum_health": 1000,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Drak-O-Lantern ",
-		"attribute": {
-			"critical_hit_": 0.6,
-			"damage": 250,
-			"jump": 1,
 			"max_health": 1000,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Inora, Flame of Enlightenment ",
+		"name": "Drak-O-Lantern",
 		"attribute": {
-			"maximum_health_": 10,
-			"attack_speed_": 3,
+			"critical_hit": 0.6,
+			"max_health": 1000,
+			"damage": 250,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Inora, Flame of Enlightenment",
+		"attribute": {
+			"max_health_": 10,
+			"attack_speed": 3,
 			"physical_damage": 500,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Thallasion, Shaper of the Currents ",
+		"name": "Thallasion, Shaper of the Currents",
 		"attribute": {
 			"physical_damage": 250,
 			"health_regeneration": 1800,
@@ -107,94 +107,127 @@
 		},
 		"has": true
 	}, {
-		"name": "Tysorion, Steward of New Beginnings ",
+		"name": "Tysorion, Steward of New Beginnings",
 		"attribute": {
-			"critical_hit_": 0.3,
-			"critical_damage_": 3,
+			"critical_hit": 0.3,
+			"critical_damage": 3,
 			"max_health": 1000,
 			"physical_damage": 250,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Tannenbomber, the Harbinger of Tidings ",
+		"name": "Tannenbomber, the Harbinger of Tidings",
 		"attribute": {
-			"critical_hit_": 0.8,
+			"critical_hit": 0.8,
 			"magic_damage": 500,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Crisopeia, the Crucible of Souls ",
+		"name": "Crisopeia, the Crucible of Souls",
 		"attribute": {
-
+			"energy_regeneration":5,
+			"max_health":1000,
+			"magic_find":50
 		},
 		"has": true
 	}, {
-		"name": "Baesmuth, the Shaper's Gift ",
-		"attribute": {},
-		"has": true
-	}, {
-		"name": "Rachnaphon, the Silent Spectator ",
-		"attribute": {},
-		"has": true
-	}, {
-		"name": "Petallura, Nature's Beckoning ",
-		"attribute": {},
-		"has": true
-	}, {
-		"name": "Miraldis, the Primordial Preserver ",
+		"name": "Baesmuth, the Shaper's Gift",
 		"attribute": {
-			"max_health_": 10
+			"lasermancy":50,
+			"max_health":1000,
+			"magic_find":50
 		},
 		"has": true
 	}, {
-		"name": "Wyntegra, Galenor's Pride ",
-		"attribute": {},
-		"has": true
-	}, {
-		"name": "Sarsaponia, the Pristine ",
+		"name": "Rachnaphon, the Silent Spectator",
 		"attribute": {
-			"maximum": 1000,
-			"maximum_health": 1000,
-			"critical_damage_": 10
+			"attack_speed":8,
+			"max_health":1000,
+			"magic_find":50
 		},
 		"has": true
 	}, {
-		"name": "Almakhestia, Host of Starfire ",
+		"name": "Petallura, Nature's Beckoning",
 		"attribute": {
-			"maximum_health": 1000,
+			"max_health_":20,
+			"magic_damage":500,
+			"magic_find":50
+		},
+		"has": true
+	}, {
+		"name": "Miraldis, the Primordial Preserver",
+		"attribute": {
+			"max_health_": 10,
+			"max_health":1000,
+			"physical_damage":500,
+			"magic_find":50
+		},
+		"has": true
+	}, {
+		"name": "Wyntegra, Galenor's Pride",
+		"attribute": {
+			"max_health":1000,
+			"critical_damage":3,
+			"physical_damage":500,
+			"magic_find":50
+		},
+		"has": true
+	}, {
+		"name": "Sarsaponia, the Pristine",
+		"attribute": {
+			"max_health": 1000,
+			"critical_damage": 10,
+			"magic_find":50
+		},
+		"has": true
+	}, {
+		"name": "Almakhestia, Host of Starfire",
+		"attribute": {
+			"max_health": 1000,
 			"energy_regeneration_": 3,
 			"physical_damage": 250,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Aurym, Keeper of Histories ",
+		"name": "Aurym, Keeper of Histories",
 		"attribute": {
-			"attack_speed_": 7,
+			"attack_speed": 7,
 			"max_health": 1000,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Blocktron, the Guardian Beyond the Sky ",
+		"name": "Blocktron, the Guardian Beyond the Sky",
 		"attribute": {
-			"maximum_health": 1000,
-			"maximum_health_": 10,
-			"physical_damage": 500
+			"max_health": 1000,
+			"max_health_": 10,
+			"physical_damage": 500,
+			"magic_find":50
 		},
 		"has": true
 	}, {
-		"name": "Tanbleddyn of the Western Peaks ",
-		"attribute": {},
+		"name": "Tanbleddyn of the Western Peaks",
+		"attribute": {
+			"critical_damage":3,
+			"max_health":1000,
+			"physical_damage":500,
+			"magic_find":50
+		},
 		"has": true
 	}, {
-		"name": "Fulguras, the Lightning ",
-		"attribute": {},
+		"name": "Fulguras, the Lightning",
+		"attribute": {
+			"attack_speed":5,
+			"critical_hit":0.5,
+			"max_health":1000,
+			"magic_find":50
+		},
 		"has": true
 	}, {
-		"name": "Xendri, the Arc Tempest ",
+		"name": "Xendri, the Arc Tempest",
 		"attribute": {
 			"maximum_energy": 10,
 			"energy_regeneration_": 3,
@@ -203,16 +236,16 @@
 		},
 		"has": true
 	}, {
-		"name": "Carys, Seraph of the Golden Vale ",
+		"name": "Carys, Seraph of the Golden Vale",
 		"attribute": {
 			"max_health_": 10,
-			"critical_damage_": 8,
+			"critical_damage": 8,
 			"jump": 2,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Norari, the Wayward Spear ",
+		"name": "Norari, the Wayward Spear",
 		"attribute": {
 			"max_health": 1000,
 			"energy_regeneration_": 5,
@@ -220,30 +253,226 @@
 		},
 		"has": true
 	}, {
-		"name": "Typhandir, the Sundered Shield ",
+		"name": "Typhandir, the Sundered Shield",
 		"attribute": {
 			"max_health_": 10,
-			"attack_speed_": 7,
+			"attack_speed": 7,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Jhorondir, Arms of the Goddess ",
+		"name": "Jhorondir, Arms of the Goddess",
 		"attribute": {
 			"max_health": 1000,
 			"max_health_": 10,
-			"critical_damage_": 3,
-			"attack_speed_": 3,
+			"critical_damage": 3,
+			"attack_speed": 3,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Phyconidia, Sower of the Sandsea ",
+		"name": "Phyconidia, Sower of the Sandsea",
 		"attribute": {
 			"max_health": 1000,
-			"attack_speed_": 3,
-			"critical_hit_": 0.2,
+			"attack_speed": 3,
+			"critical_hit": 0.2,
 			"physical_damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}],
+	"o": [{
+		"name": "Spirit of Azorian",
+		"attribute": {
+			"damage": 250,
+			"max_health_": 10,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Elder Dragon",
+		"attribute": {
+			"max_health": 1000,
+			"maximum_energy": 1,
+			"energy_regeneration": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Spirit of Lambent",
+		"attribute": {
+			"damage": 250,
+			"energy_regeneration_": 5,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Spirit of Trimach",
+		"attribute": {
+			"max_health": 1000,
+			"maximum_energy": 5,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Lunar Guidance",
+		"attribute": {
+			"max_health": 1000,
+			"health_regeneration_": 5,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Vile Guidance",
+		"attribute": {
+			"damage": 250,
+			"critical_damage": 10,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Winter Aura",
+		"attribute": {
+			"damage": 250,
+			"critical_hit": 1,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Starlight Aura",
+		"attribute": {
+			"max_health": 1000,
+			"magic_damage": 500,
+			"jump": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Lunar New Year Dragon",
+		"attribute": {
+			"max_health": 1000,
+			"critical_hit": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Dusk Dragon",
+		"attribute": {
+			"max_health": 1000,
+			"critical_damage": 10,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Siege Dragon",
+		"attribute": {
+			"max_health": 1000,
+			"health_regeneration": 1750,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Bomber Dragon",
+		"attribute": {
+			"critical_hit": 0.6,
+			"max_health": 1000,
+			"damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Music Dragon",
+		"attribute": {
+			"health_regeneration_": 3,
+			"physical_damage": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Pinata Dragon",
+		"attribute": {
+			"attack_speed": 7,
+			"magic_damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Dark Infineon Dragon",
+		"attribute": {
+			"magic_damage": 250,
+			"critical_hit": 1,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Block Dragon",
+		"attribute": {
+			"jump": 3,
+			"magic_find": 100
+		},
+		"has": true
+	}, {
+		"name": "Candorian Dragon",
+		"attribute": {
+			"health_regeneration_": 5,
+			"max_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Wisdom Dragon",
+		"attribute": {
+			"max_health_": 10,
+			"attack_speed": 3,
+			"physical_damage": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Deep Sea Dragon",
+		"attribute": {
+			"physical_damage": 250,
+			"health_regeneration": 1800,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Worldspring Dragon",
+		"attribute": {
+			"critical_hit": 0.3,
+			"critical_damage": 3,
+			"max_health": 1000,
+			"physical_damage": 250,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Joyous Dragon",
+		"attribute": {
+			"critical_hit": 0.8,
+			"magic_damage": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Pirate Dragon",
+		"attribute": {
+			"critical_damage": 10,
+			"max_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Lorekeeper Dragon",
+		"attribute": {
+			"attack_speed": 7,
+			"max_health": 1000,
 			"magic_find": 50
 		},
 		"has": true
