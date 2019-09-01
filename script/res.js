@@ -4,7 +4,6 @@
 		function run(){
 			var list=$(".type_root");
 			var attribute=globla_function.get_attributes(list,$("#res_o"));
-			attribute.critical_damage+=50;//基础提供50%爆伤
 			var res_damage=(attribute[globla_function.get_damage_type()]+(attribute.damage||0))*(100+(attribute.damage_||0)+20)*0.01;
 			var critical_hit=attribute.critical_hit||0;
 			if(critical_hit>100)critical_hit=100;

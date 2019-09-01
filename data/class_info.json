@@ -169,7 +169,7 @@
 				"max_health":500,
 				"er":4,
 				"critical_hit":1,
-				"critical_demage":25,
+				"critical_damage":25,
 			},
 		]
 	}
