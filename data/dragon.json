@@ -280,9 +280,17 @@
 			"magic_find": 50
 		},
 		"has": true
+	},{
+		"name":"Cy and Sanguine, the Twin Plagues ",//瘟疫
+		"attribute":{
+			"max_health":1000,
+			"jump":2,
+			"critical_damage":5,
+			"magic_find":50
+		}
 	}],
-	"o": [{
-		"name": "Spirit of Azorian",
+	"lh": [{
+		"name": "Spirit of Azorian",//沧蓝
 		"attribute": {
 			"damage": 250,
 			"max_health_": 10,
@@ -291,16 +299,16 @@
 		},
 		"has": true
 	}, {
-		"name": "Elder Dragon",
-		"attribute": {
-			"max_health": 1000,
-			"maximum_energy": 1,
-			"energy_regeneration": 1,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Spirit of Lambent",
+	// 	"name": "Elder Dragon",
+	// 	"attribute": {
+	// 		"max_health": 1000,
+	// 		"maximum_energy": 1,
+	// 		"energy_regeneration": 1,
+	// 		"magic_find": 50
+	// 	},
+	// 	"has": true
+	// }, {
+		"name": "Spirit of Lambent",//霓虹
 		"attribute": {
 			"damage": 250,
 			"energy_regeneration_": 5,
@@ -309,7 +317,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Spirit of Trimach",
+		"name": "Spirit of Trimach",//远古
 		"attribute": {
 			"max_health": 1000,
 			"maximum_energy": 5,
@@ -318,7 +326,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Lunar Guidance",
+		"name": "Lunar Guidance",//月翼
 		"attribute": {
 			"max_health": 1000,
 			"health_regeneration_": 5,
@@ -327,7 +335,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Vile Guidance",
+		"name": "Vile Guidance",//骸骨
 		"attribute": {
 			"damage": 250,
 			"critical_damage": 10,
@@ -336,7 +344,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Winter Aura",
+		"name": "Winter Aura",//冬季
 		"attribute": {
 			"damage": 250,
 			"critical_hit": 1,
@@ -345,7 +353,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Starlight Aura",
+		"name": "Starlight Aura",//星光
 		"attribute": {
 			"max_health": 1000,
 			"magic_damage": 500,
@@ -354,125 +362,134 @@
 		},
 		"has": true
 	}, {
-		"name": "Lunar New Year Dragon",
+		"name": "sl",//奢龙
 		"attribute": {
 			"max_health": 1000,
-			"critical_hit": 1,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Dusk Dragon",
-		"attribute": {
-			"max_health": 1000,
-			"critical_damage": 10,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Siege Dragon",
-		"attribute": {
-			"max_health": 1000,
-			"health_regeneration": 1750,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Bomber Dragon",
-		"attribute": {
-			"critical_hit": 0.6,
-			"max_health": 1000,
+			"critical_hit": 0.5,
+			"critical_damage": 5,
 			"damage": 250,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Music Dragon",
-		"attribute": {
-			"health_regeneration_": 3,
-			"physical_damage": 500,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Pinata Dragon",
-		"attribute": {
-			"attack_speed": 7,
-			"magic_damage": 250,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Dark Infineon Dragon",
-		"attribute": {
-			"magic_damage": 250,
-			"critical_hit": 1,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Block Dragon",
-		"attribute": {
-			"jump": 3,
 			"magic_find": 100
 		},
 		"has": true
-	}, {
-		"name": "Candorian Dragon",
+	}
+	],
+	"o":[
+	{
+		"name": "Disaeon the Immortal ",
 		"attribute": {
-			"health_regeneration_": 5,
 			"max_health": 1000,
+			"maximum_energy": 1,
+			"energy_regeneration_": 1,
 			"magic_find": 50
 		},
 		"has": true
-	}, {
-		"name": "Wisdom Dragon",
+	},
+	//, {
+	// 	"name": "Azorian the Blue ",
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Lambent the Neolord ",
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Trimach the Ancient ",
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Syluria the Enchanting ",
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Khadavros, the Waiting Oblivion ",
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Galenor, Primarch of Permafrost ",
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Stellaurion, Charter of the Constellations ",//星光龙
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Valkizer, King of Dragons ",//专精龙
+	// 	"attribute": {},
+	// 	"has": true
+	// }, {
+	// 	"name": "Valkartzer, Dragon Magrider ",//磁力龙
+	// 	"attribute": {},
+	// 	"has": false
+	// },
+	 {
+		"name": "Indurion, the Unwavering ",//暗影箱的龙
 		"attribute": {
-			"max_health_": 10,
-			"attack_speed": 3,
-			"physical_damage": 500,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Deep Sea Dragon",
-		"attribute": {
-			"physical_damage": 250,
-			"health_regeneration": 1800,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Worldspring Dragon",
-		"attribute": {
-			"critical_hit": 0.3,
-			"critical_damage": 3,
-			"max_health": 1000,
-			"physical_damage": 250,
-			"magic_find": 50
-		},
-		"has": true
-	}, {
-		"name": "Joyous Dragon",
-		"attribute": {
-			"critical_hit": 0.8,
+			"critical_damage": 10,
 			"magic_damage": 500,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Pirate Dragon",
+		"name": "Olhukoi, the Moonlit Muse ",//月魂龙
 		"attribute": {
-			"critical_damage": 10,
+			"max_health": 1000,
+			"critical_hit": 0.3,
+			"magic_damage": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Rhom-10, Dissent’s Roar ",//电阻龙
+		"attribute": {
+			"attack_speed": 7,
 			"max_health": 1000,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
-		"name": "Lorekeeper Dragon",
+		"name": "Hoshizora, Luminary of Hope ",//电阻龙
 		"attribute": {
 			"attack_speed": 7,
 			"max_health": 1000,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+	// 	"name": "Cy and Sanguine, the Twin Plagues ",//unknoe
+	// 	"attribute": {
+	// 		"max_health": 1000,
+	// 		"jump": 2,
+	// 		"critical_damage": 5,
+	// 		"magic_find": 50
+	// 	},
+	// 	"has": true
+	// }, {
+		"name": "Luxarion, Scion of the Hoard ",
+		"attribute": {},
+		"has": true
+	}, {
+		"name": "Yzzuli of the Honeybreeze ",
+		"attribute": {
+			"max_health": 1000,
+			"damage": 250,
+			"attack_speed": 5,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Shaoran, Sage of the Eastern Ranges ",
+		"attribute": {
+			"max_health_": 20,
+			"magic": 500,
+			"magic_find": 50
+		},
+		"has": true
+	}, {
+		"name": "Amatrix, the Hexed ",
+		"attribute": {
+			"max_health":1000,
+			"max_health_":7,
+			"maximum_energy": 10,
 			"magic_find": 50
 		},
 		"has": true
