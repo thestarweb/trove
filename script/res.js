@@ -9,7 +9,7 @@
 			if(critical_hit>100)critical_hit=100;
 			$("#res_damage").innerHTML=res_damage.toFixed(0);
 			$("#res_health").innerHTML=((attribute.max_health||0)*(100+(attribute.max_health_||0))/100).toFixed(0);
-			$("#res_coe").innerHTML=(res_damage*(100+attribute.critical_damage*critical_hit)/100).toFixed(2);
+			$("#res_coe").innerHTML=(res_damage*(10000+attribute.critical_damage*critical_hit)/10000).toFixed(2);
 		}
 		$(".type_root").set("update",run);
 		run();
