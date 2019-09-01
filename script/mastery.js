@@ -1,7 +1,7 @@
 
 $("#mastery").get_attribute=function(){
 	var lv=$("#mastery_lv").value;
-	return {damage_:lv*0.15,max_helth_:lv*0.5};
+	return {damage_:lv*0.15,max_health_:lv*0.5};
 }
 $("#mastery").onchange=function(){
 	if(this.update) this.update();
