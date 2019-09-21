@@ -7,170 +7,1084 @@
 			{//lv2
 				"magic_damage":10,
 				"max_health":20,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{
 				"magic_damage":10,
 				"max_health":20,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv4
 				"magic_damage":16,
 				"max_health":20,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv5
 				"magic_damage":16,
 				"max_health":20,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv6
 				"magic_damage":35,
 				"max_health":60,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv7
 				"magic_damage":35,
 				"max_health":60,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv8
 				"magic_damage":50,
 				"max_health":80,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv9
 				"magic_damage":50,
 				"max_health":80,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv10
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv11
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv12
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv13
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv14
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv15
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv16
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv17
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv18
 				"magic_damage":50,
 				"max_health":100,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv19
 				"magic_damage":50,
 				"max_health":200,
-				"er":1,
+				"energy_regeneration":1
 			},
 			{//lv20
 				"magic_damage":50,
 				"max_health":200,
-				"er":1,
+				"energy_regeneration":1,
 				"critical_hit":0.5,
-				"jump":1,
+				"jump":1
 			},
 			{//lv21
 				"magic_damage":100,
 				"max_health":200,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv22
 				"magic_damage":100,
 				"max_health":200,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv23
 				"magic_damage":100,
 				"max_health":200,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv24
 				"magic_damage":100,
 				"max_health":200,
-				"er":1,
-				"critical_hit":0.5,
+				"energy_regeneration":1,
+				"critical_hit":0.5
 			},
 			{//lv25
 				"magic_damage":150,
 				"max_health":300,
-				"er":1,
-				"critical_hit":0.7,
+				"energy_regeneration":1,
+				"critical_hit":0.7
 			},
 			{//lv26
 				"magic_damage":150,
 				"max_health":300,
-				"er":1,
-				"critical_hit":0.7,
+				"energy_regeneration":1,
+				"critical_hit":0.7
 			},
 			{//lv27
 				"magic_damage":150,
 				"max_health":300,
-				"er":1,
-				"critical_hit":0.7,
+				"energy_regeneration":1,
+				"critical_hit":0.7
 			},
 			{//lv28
 				"magic_damage":200,
 				"max_health":300,
-				"er":2,
-				"critical_hit":0.7,
+				"energy_regeneration":2,
+				"critical_hit":0.7
 			},
 			{//lv29
 				"magic_damage":200,
 				"max_health":400,
-				"er":3,
-				"critical_hit":0.7,
+				"energy_regeneration":3,
+				"critical_hit":0.7
 			},
 			{//lv30
 				"magic_damage":250,
 				"max_health":500,
-				"er":4,
+				"energy_regeneration":4,
 				"critical_hit":1,
-				"critical_damage":25,
+				"critical_damage":25
 			},
+		]
+	},
+	"IceSage":{
+		"damage_type":"magic_damage",
+		"levup":[
+			{},
+			{},
+			{//lv2
+				"magic_damage":10,
+				"max_health":20,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{
+				"magic_damage":10,
+				"max_health":20,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv4
+				"magic_damage":16,
+				"max_health":20,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv5
+				"magic_damage":16,
+				"max_health":20,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv6
+				"magic_damage":35,
+				"max_health":60,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv7
+				"magic_damage":35,
+				"max_health":60,
+				"energy_regeneration":1,
+				"critical_hit":0.3
+			},
+			{//lv8
+				"magic_damage":50,
+				"max_health":80,
+				"energy_regeneration":1,
+				"critical_hit":0.2
+			},
+			{//lv9
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv10
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv11
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv12
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv13
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv14
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv15
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv16
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv17
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv18
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv19
+				"magic_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"critical_hit":0.1
+			},
+			{//lv20
+				"magic_damage":50,
+				"max_health":300,
+				"energy_regeneration":2,
+				"critical_hit":0.2,
+				"jump":1
+			},
+			{//lv21
+				"magic_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"critical_hit":0.5
+			},
+			{//lv22
+				"magic_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"critical_hit":0.5
+			},
+			{//lv23
+				"magic_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"critical_hit":0.5
+			},
+			{//lv24
+				"magic_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"critical_hit":0.5
+			},
+			{//lv25
+				"magic_damage":150,
+				"max_health":300,
+				"energy_regeneration":1,
+				"critical_hit":0.7
+			},
+			{//lv26
+				"magic_damage":150,
+				"max_health":300,
+				"energy_regeneration":1,
+				"critical_hit":0.7
+			},
+			{//lv27
+				"magic_damage":150,
+				"max_health":300,
+				"energy_regeneration":1,
+				"critical_hit":0.7
+			},
+			{//lv28
+				"magic_damage":200,
+				"max_health":300,
+				"energy_regeneration":2,
+				"critical_hit":0.7
+			},
+			{//lv29
+				"magic_damage":200,
+				"max_health":400,
+				"energy_regeneration":3,
+				"critical_hit":0.7
+			},
+			{//lv30
+				"magic_damage":250,
+				"max_health":500,
+				"energy_regeneration":4,
+				"critical_hit":1,
+				"critical_damage":25
+			},
+		]
+	},
+	"NeonNinja":{
+		"damage_type":"physical_damage",
+		"levup":[
+			{},
+			{},
+			{//lv2
+				"physical_damage":10,
+				"max_health":20,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv3
+				"physical_damage":10,
+				"max_health":20,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv4
+				"physical_damage":16,
+				"max_health":40,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv5
+				"physical_damage":16,
+				"max_health":40,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv6
+				"physical_damage":35,
+				"max_health":60,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv7
+				"physical_damage":35,
+				"max_health":60,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv8
+				"physical_damage":50,
+				"max_health":80,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv9
+				"physical_damage":50,
+				"max_health":80,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv10
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv11
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv12
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv13
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv14
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv15
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv16
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv17
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv18
+				"physical_damage":50,
+				"max_health":100,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv19
+				"physical_damage":50,
+				"max_health":200,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv20
+				"physical_damage":50,
+				"max_health":300,
+				"energy_regeneration":2,
+				"attack_speed":2
+			},
+			{//lv21
+				"physical_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv22
+				"physical_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv23
+				"physical_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv24
+				"physical_damage":100,
+				"max_health":200,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv25
+				"physical_damage":150,
+				"max_health":300,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv26
+				"physical_damage":150,
+				"max_health":300,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv27
+				"physical_damage":150,
+				"max_health":300,
+				"energy_regeneration":1,
+				"attack_speed":1
+			},
+			{//lv28
+				"physical_damage":200,
+				"max_health":300,
+				"energy_regeneration":2,
+				"attack_speed":1
+			},
+			{//lv29
+				"physical_damage":200,
+				"max_health":400,
+				"energy_regeneration":3,
+				"attack_speed":1
+			},
+			{//lv30
+				"physical_damage":250,
+				"max_health":500,
+				"energy_regeneration":4,
+				"attack_speed":2,
+				"critical_damage":25
+			}
+		]
+	},
+	"Revenant":{
+		"damage_type":"physical_damage",
+		"levup":[
+			{},
+			{},
+			{//lv2
+				"physical_damage":10,
+				"max_health":20,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv3
+				"physical_damage":10,
+				"max_health":20,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv4
+				"physical_damage":18,
+				"max_health":40,
+				"max_health_":3,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv5
+				"physical_damage":18,
+				"max_health":40,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv6
+				"physical_damage":35,
+				"max_health":60,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv7
+				"physical_damage":35,
+				"max_health":60,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv8
+				"physical_damage":50,
+				"max_health":80,
+				"max_health_":3,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv9
+				"physical_damage":50,
+				"max_health":80,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv10
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv11
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv12
+				"physical_damage":50,
+				"max_health":100,
+				"max_health_":3,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv13
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv14
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv15
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv16
+				"physical_damage":50,
+				"max_health":100,
+				"max_health_":3,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv17
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv18
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv19
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv20
+				"physical_damage":100,
+				"max_health":200,
+				"max_health_":3,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv21
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv22
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv23
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv24
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv25
+				"physical_damage":150,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv26
+				"physical_damage":150,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv27
+				"physical_damage":150,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv28
+				"physical_damage":200,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv29
+				"physical_damage":200,
+				"max_health":400,
+				"health_regeneration":200,
+				"stability":13
+			},
+			{//lv30
+				"physical_damage":250,
+				"max_health":500,
+				"health_regeneration":250,
+				"stability":14
+			}
+		]
+	},
+	"Knight":{
+		"damage_type":"physical_damage",
+		"levup":[
+			{},
+			{},
+			{//lv2
+				"physical_damage":10,
+				"max_health":20,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv3
+				"physical_damage":10,
+				"max_health":20,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv4
+				"physical_damage":16,
+				"max_health":40,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv5
+				"physical_damage":14,
+				"max_health":40,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv6
+				"physical_damage":35,
+				"max_health":60,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv7
+				"physical_damage":35,
+				"max_health":60,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv8
+				"physical_damage":50,
+				"max_health":80,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv9
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv10
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv11
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv12
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv13
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv14
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv15
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv16
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv17
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv18
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv19
+				"physical_damage":50,
+				"max_health":100,
+				"health_regeneration":1,
+				"stability":1
+			},
+			{//lv20
+				"physical_damage":50,
+				"max_health":200,
+				"health_regeneration":2,
+				"stability":2
+			},
+			{//lv21
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv22
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv23
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv24
+				"physical_damage":100,
+				"max_health":200,
+				"health_regeneration":100,
+				"stability":10
+			},
+			{//lv25
+				"physical_damage":150,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv26
+				"physical_damage":150,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv27
+				"physical_damage":150,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv28
+				"physical_damage":200,
+				"max_health":300,
+				"health_regeneration":150,
+				"stability":12
+			},
+			{//lv29
+				"physical_damage":200,
+				"max_health":400,
+				"health_regeneration":200,
+				"stability":14
+			},
+			{//lv30
+				"physical_damage":250,
+				"max_health":500,
+				"health_regeneration":250,
+				"stability":16
+			}
+		]
+	},
+	"Vanguardian":{
+		"damage_type":"physical_damage",
+		"levup":[
+			{},
+			{},
+			{//lv2
+				"physical_damage":10,
+				"max_health":20,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv3
+				"physical_damage":10,
+				"max_health":20,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv4
+				"physical_damage":18,
+				"max_health":40,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv5
+				"physical_damage":18,
+				"max_health":40,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv6
+				"physical_damage":35,
+				"max_health":60,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv7
+				"physical_damage":35,
+				"max_health":60,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv8
+				"physical_damage":50,
+				"max_health":80,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv9
+				"physical_damage":50,
+				"max_health":80,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv10
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv11
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv12
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv13
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv14
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv15
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv16
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv17
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv18
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv19
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv20
+				"physical_damage":150,
+				"max_health":300,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv21
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv22
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv23
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv24
+				"physical_damage":100,
+				"max_health":200,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv25
+				"physical_damage":150,
+				"max_health":300,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv26
+				"physical_damage":150,
+				"max_health":300,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv27
+				"physical_damage":150,
+				"max_health":300,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv28
+				"physical_damage":200,
+				"max_health":300,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv29
+				"physical_damage":200,
+				"max_health":400,
+				"max_energy":2,
+				"stability":8
+			},
+			{//lv30
+				"physical_damage":250,
+				"max_health":500,
+				"max_energy":4,
+				"stability":8,
+				"critical_damage":25
+			}
 		]
 	}
 }
