@@ -170,7 +170,7 @@
 				"energy_regeneration":4,
 				"critical_hit":1,
 				"critical_damage":25
-			},
+			}
 		]
 	},
 	"IceSage":{
@@ -353,7 +353,7 @@
 				"energy_regeneration":4,
 				"critical_hit":1,
 				"critical_damage":25
-			},
+			}
 		]
 	},
 	"NeonNinja":{
