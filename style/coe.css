@@ -23,6 +23,7 @@ input,select{
 	border:solid 1px #999;
 	background: #101;
 	color: #88f;
+	border-radius: 2px;
 }
 
 
@@ -137,11 +138,24 @@ input,select{
 }
 
 /*专精*/
-#mastery input{
+#mastery #mastery_lv{
 	width: 50px;
 }
-#mastery input:nth-child(2n){
+#mastery #mastery_point{
 	width: 100px;
+}
+#mastery #mastery_lv_point{
+	width: 50px;
+}
+#mastery_bar{
+	margin: 2px;
+	padding: 1px;
+	height: 2px;
+	border: solid 1px #aa0;
+}
+#mastery_bar div{
+	height: 100%;
+	background: #aa0;
 }
 
 /*装备*/
