@@ -1,0 +1,41 @@
+	<div id="info_ctrl" class="block" style="display: none">
+		<span id="player_info_ctrl_save" class="button">保存数据</span>
+	</div>
+	<script type="text/javascript">
+		suc_u_load(function(data){
+			if(data.u.username){
+				$("#info_ctrl").style.display="";
+				$("#player_info_ctrl_save").onclick=function(){
+					var list=$(".type_root");
+					var post={};
+					for(var i=0;i<list.length;i++){
+						if(list[i].get_data){
+							post[list[i].id]=list[i].get_data();
+						}
+					}
+					var ajax=$.ajax();
+					ajax.data={key:data.u.key,data:post};
+					ajax.page="<?php echo URLROOT;?>player_info/save_info";
+					ajax.callback=function(res){
+						if(res.json.is_ok){
+							myScript.message("保存成功",'');
+						}
+					}
+					ajax.send();
+				}
+				var ajax=$.ajax();
+				ajax.data={key:data.u.key};
+				ajax.page="<?php echo URLROOT;?>player_info/get_info";
+				ajax.callback=function(ajax){
+					var data=ajax.json.data;
+					for(var i in data){
+						var item=$("#"+i);
+						if(item&&item.load_data){
+							item.load_data(data[i]);
+						}
+					}
+				}
+				ajax.send();
+			}
+		},<?php echo $system->succ->get_js_key();?>);
+	</script>

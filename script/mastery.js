@@ -3,6 +3,14 @@ $("#mastery").get_attribute=function(){
 	var lv=$("#mastery_lv").value;
 	return {damage_:lv*0.15,max_health_:lv*0.5};
 }
+$("#mastery").load_data=function(data){
+	$("#mastery_point").value=data;
+	$("#mastery_point").oninput();
+	$("#mastery").oninput();
+}
+$("#mastery").get_data=function(){
+	return $("#mastery_point").value;
+}
 $("#mastery").oninput=function(){
 	if(this.update) this.update();
 	$("#mastery_bar div")[0].style.width=($("#mastery_lv_point").value/$("#mastery_need").innerHTML*100)+"%";

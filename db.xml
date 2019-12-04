@@ -1,0 +1,21 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<!--本文件用于安装/更新数据库，同时兼具数据字典功能，程序读取是，不会对数据进行有效性验证，请勿随意改动-->
+<db>
+	<table name="admins">
+		<structure type="mediumint" name="id" auto_increment="true" attributes="UNSIGNED"/>
+		<structure type="mediumint" name="uid" key="true" attributes="UNSIGNED" default="0"/>
+		<structure type="tinyint" name="pid" attributes="UNSIGNED" default="0"/>
+		<structure type="tinyint" name="type" attributes="UNSIGNED" default="1"/>
+	</table>
+	<table name="admin_pages">
+		<structure type="smallint" name="id" auto_increment="true" attributes="UNSIGNED"/>
+		<structure type="smallint" name="pid"/>
+		<structure type="varchar(10)" name="title"/>
+		<structure type="tinyint" name="is_menu"/>
+		<structure type="varchar(200)" name="src" null="true"/>
+	</table>
+	<table name="player_baseinfo">
+		<structure type="mediumint" name="uid" auto_increment="true" attributes="UNSIGNED"/>
+		<structure type="int" name="mastery" default="0"/>
+	</table>
+</db>
