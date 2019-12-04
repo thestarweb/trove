@@ -1,0 +1,9 @@
+cfg.ini
+*.mp3
+*.cache
+*.temp
+*.temp.*
+error.log
+plugin/*
+cache/*
+php_errors.log

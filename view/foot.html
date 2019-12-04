@@ -1,2 +1,9 @@
+	<?php $this->succ->show_script();?>
+	<script>
+	suc_u_load(function(suc_u_info){
+	//$('#user').innerHTML=suc_u_info.u.username?suc_u_info.u.username:'游客';
+	console.log(suc_u_info)
+	},<?php echo $this->succ->get_js_key();?>);
+	</script>
 </body>
 </html>
