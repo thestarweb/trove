@@ -229,7 +229,7 @@
 	}, {
 		"name": "Xendri, the Arc Tempest",
 		"attribute": {
-			"maximum_energy": 10,
+			"max_energy": 10,
 			"energy_regeneration_": 3,
 			"max_health": 1000,
 			"magic_find": 50
@@ -302,7 +302,7 @@
 	// 	"name": "Elder Dragon",
 	// 	"attribute": {
 	// 		"max_health": 1000,
-	// 		"maximum_energy": 1,
+	// 		"max_energy": 1,
 	// 		"energy_regeneration": 1,
 	// 		"magic_find": 50
 	// 	},
@@ -320,7 +320,7 @@
 		"name": "Spirit of Trimach",//远古
 		"attribute": {
 			"max_health": 1000,
-			"maximum_energy": 5,
+			"max_energy": 5,
 			"jump": 1,
 			"magic_find": 50
 		},
@@ -378,7 +378,7 @@
 		"name": "Disaeon the Immortal ",
 		"attribute": {
 			"max_health": 1000,
-			"maximum_energy": 1,
+			"max_energy": 1,
 			"energy_regeneration_": 1,
 			"magic_find": 50
 		},
@@ -489,7 +489,7 @@
 		"attribute": {
 			"max_health":1000,
 			"max_health_":7,
-			"maximum_energy": 10,
+			"max_energy": 10,
 			"magic_find": 50
 		},
 		"has": true

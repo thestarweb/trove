@@ -283,7 +283,9 @@
 
 		var attributes={
 			physical_damage:{name:"物理伤害",fixed:0,gem:true},
+			physical_damage_:{name:"物理伤害%",fixed:0},
 			magic_damage:{name:"魔法伤害",fixed:0,gem:true},
+			magic_damage_:{name:"魔法伤害%",fixed:0},
 			damage:{name:"伤害"},
 			damage_:{name:"伤害加成",fixed:1},
 			critical_damage:{name:"暴击伤害",fixed:2,gem:true},
@@ -292,13 +294,14 @@
 			max_health_:{name:"百分比生命",fixed:0,gem:true},
 			health_regeneration:{name:"生命恢复"},
 			health_regeneration_:{name:"生命恢复%"},
+			max_energy:{name:"最大能量"},
 			energy_regeneration_:{name:"回能"},
 			lasermancy:{name:"镭射"},
 			jump:{name:"跳跃"},
 			light:{name:"光",fixed:0,gem:false,cosmic_gem:true},
 			magic_find:{name:"魔寻",fixed:0,gem:false},
 			attack_speed:{name:"攻速"},
-			move_speed:{name:"攻速"}
+			move_speed:{name:"移速"}
 		};
 		var types=$(".type_root");
 		for(var i=0;i<types.length;i++){
