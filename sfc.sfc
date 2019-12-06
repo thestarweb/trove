@@ -1,6 +1,6 @@
 <?php
 //检查system版本
-if(!defined('system::VISION')||system::VISION<17){
+if(!defined('system::VISION')||system::VISION<16){
 	//var_dump(defined('system::VISION'));
 	die('核心框架system版本过低');
 }
