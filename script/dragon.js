@@ -11,7 +11,7 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 		for(var j=0;j<dragon[i].length;j++){
 			var item=$.set("div",data_div);
 			item.className="dragon_item block";
-			$.set("div",item).innerHTML=dragon[i][j].name+"<input type='checkbox' checked/>";
+			$.set("div",item).innerHTML=dragon[i][j].name+"-"+dragon[i][j].cn+"<input type='checkbox' checked/>";
 			globla_function.display_attributes(dragon[i][j].attribute,$.set("div",item));
 			item.get_attribute=(function(i,j){
 				return function(){

@@ -336,7 +336,8 @@
 		"has":true
 	}],
 	"lh": [{
-		"name": "Spirit of Azorian",//沧蓝
+		"name": "Spirit of Azorian",
+		"cn":"沧蓝",
 		"attribute": {
 			"damage": 250,
 			"max_health_": 10,
@@ -345,7 +346,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Elder Dragon",//永生
+		"name": "Elder Dragon",
+		"cn":"永生",
 		"attribute": {
 			"max_health": 1000,
 			"max_energy": 1,
@@ -354,7 +356,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Spirit of Lambent",//霓虹
+		"name": "Spirit of Lambent",
+		"cn":"霓虹",
 		"attribute": {
 			"damage": 250,
 			"energy_regeneration_": 5,
@@ -363,7 +366,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Spirit of Trimach",//远古
+		"name": "Spirit of Trimach",
+		"cn":"远古",
 		"attribute": {
 			"max_health": 1000,
 			"max_energy": 5,
@@ -372,7 +376,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Lunar Guidance",//月翼
+		"name": "Lunar Guidance",
+		"cn":"月翼",
 		"attribute": {
 			"max_health": 1000,
 			"health_regeneration_": 5,
@@ -381,7 +386,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Vile Guidance",//骸骨
+		"name": "Vile Guidance",
+		"cn":"骸骨",
 		"attribute": {
 			"damage": 250,
 			"critical_damage": 10,
@@ -390,7 +396,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Winter Aura",//冬季
+		"name": "Winter Aura",
+		"cn":"冬季",
 		"attribute": {
 			"damage": 250,
 			"critical_hit": 1,
@@ -399,7 +406,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Starlight Aura",//星光
+		"name": "Starlight Aura",
+		"cn":"星光",
 		"attribute": {
 			"max_health": 1000,
 			"magic_damage": 500,
@@ -408,7 +416,8 @@
 		},
 		"has": true
 	}, {
-		"name": "sl",//奢龙
+		"name": "sl",
+		"cn":"奢龙",
 		"attribute": {
 			"max_health": 1000,
 			"critical_hit": 0.5,
@@ -430,45 +439,9 @@
 		},
 		"has": true
 	},
-	//, {
-	// 	"name": "Azorian the Blue ",
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Lambent the Neolord ",
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Trimach the Ancient ",
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Syluria the Enchanting ",
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Khadavros, the Waiting Oblivion ",
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Galenor, Primarch of Permafrost ",
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Stellaurion, Charter of the Constellations ",//星光龙
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Valkizer, King of Dragons ",//专精龙
-	// 	"attribute": {},
-	// 	"has": true
-	// }, {
-	// 	"name": "Valkartzer, Dragon Magrider ",//磁力龙
-	// 	"attribute": {},
-	// 	"has": false
-	// },
 	 {
-		"name": "Indurion, the Unwavering ",//暗影箱的龙
+		"name": "Indurion, the Unwavering ",
+		"cn":"虚空龙",
 		"attribute": {
 			"critical_damage": 10,
 			"magic_damage": 500,
@@ -476,7 +449,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Olhukoi, the Moonlit Muse ",//月魂龙
+		"name": "Olhukoi, the Moonlit Muse ",
+		"cn":"月魂龙",
 		"attribute": {
 			"max_health": 1000,
 			"critical_hit": 0.3,
@@ -485,7 +459,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Rhom-10, Dissent’s Roar ",//电阻龙
+		"name": "Rhom-10, Dissent’s Roar ",
+		"cn":"电阻龙",
 		"attribute": {
 			"attack_speed": 7,
 			"max_health": 1000,
@@ -493,7 +468,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Hoshizora, Luminary of Hope ",//电阻龙
+		"name": "Hoshizora, Luminary of Hope ",
+		"cn":"电阻龙",
 		"attribute": {
 			"attack_speed": 7,
 			"max_health": 1000,
@@ -505,7 +481,8 @@
 		"attribute": {},
 		"has": true
 	}, {
-		"name": "Yzzuli of the Honeybreeze ",//蜜蜂
+		"name": "Yzzuli of the Honeybreeze ",
+		"cn":"蜜蜂",
 		"attribute": {
 			"max_health": 1000,
 			"damage": 250,
@@ -514,7 +491,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Shaoran, Sage of the Eastern Ranges ",//东境贤者 蓝鳞龙
+		"name": "Shaoran, Sage of the Eastern Ranges ",
+		"cn":"东境贤者 蓝鳞龙",
 		"attribute": {
 			"max_health_": 20,
 			"magic": 500,
@@ -522,7 +500,8 @@
 		},
 		"has": true
 	}, {
-		"name": "Amatrix, the Hexed ",//战争之王
+		"name": "Amatrix, the Hexed ",
+		"cn":"战争之王 炸弹二期的龙",
 		"attribute": {
 			"max_health":1000,
 			"max_health_":7,
