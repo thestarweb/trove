@@ -111,9 +111,9 @@
 		},
 		"has": true
 	}, {
-		"name": "趋势操控者沙拉西恩（深海龙）",
+		"name": "Thallasion, Shaper of the Currents",
+		"cn":"趋势操控者沙拉西恩（深海龙）",
 		"attribute": {
-		"cn":"无情着",
 			"physical_damage": 250,
 			"health_regeneration": 1800,
 			"magic_find": 50
