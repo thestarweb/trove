@@ -54,6 +54,7 @@
 					for(var i=0;i<list.length;i++){
 						if(list[i].get_attribute){
 							var a=list[i].get_attribute();
+							//console.log(list[i],a,attribute);
 							for(var j in a){
 								if(attribute[j]) attribute[j]+=a[j];
 								else attribute[j]=a[j];
@@ -295,7 +296,8 @@
 			health_regeneration:{name:"生命恢复"},
 			health_regeneration_:{name:"生命恢复%"},
 			max_energy:{name:"最大能量"},
-			energy_regeneration_:{name:"回能"},
+			energy_regeneration:{name:"回能"},
+			energy_regeneration_:{name:"回能加成"},
 			lasermancy:{name:"镭射"},
 			jump:{name:"跳跃"},
 			light:{name:"光",fixed:0,gem:false,cosmic_gem:true},

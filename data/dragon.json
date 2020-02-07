@@ -210,14 +210,14 @@
 		"cn":"星火的宿主（星火龙）",
 		"attribute": {
 			"max_health": 1000,
-			"energy_regeneration": 3,
+			"energy_regeneration_": 3,
 			"physical_damage": 250,
 			"magic_find": 50
 		},
 		"has": true
 	}, {
 		"name": "Aurym, Keeper of Histories",
-		"cn":"历史纪录这",
+		"cn":"历史纪录者",
 		"attribute": {
 			"attack_speed": 7,
 			"max_health": 1000,
@@ -351,7 +351,7 @@
 		"attribute": {
 			"max_health": 1000,
 			"max_energy": 1,
-			"energy_regeneration": 1,
+			"energy_regeneration_": 1,
 			"magic_find": 50
 		},
 		"has": true
@@ -429,16 +429,16 @@
 	}
 	],
 	"o":[
-	{
-		"name": "Disaeon the Immortal ",
-		"attribute": {
-			"max_health": 1000,
-			"max_energy": 1,
-			"energy_regeneration_": 1,
-			"magic_find": 50
-		},
-		"has": true
-	},
+	// {
+	// 	"name": "Disaeon the Immortal ",
+	// 	"attribute": {
+	// 		"max_health": 1000,
+	// 		"max_energy": 1,
+	// 		"energy_regeneration_": 1,
+	// 		"magic_find": 50
+	// 	},
+	// 	"has": true
+	// },
 	 {
 		"name": "Indurion, the Unwavering ",
 		"cn":"虚空龙",
@@ -495,7 +495,7 @@
 		"cn":"东境贤者 蓝鳞龙",
 		"attribute": {
 			"max_health_": 20,
-			"magic": 500,
+			"magic_damage": 500,
 			"magic_find": 50
 		},
 		"has": true

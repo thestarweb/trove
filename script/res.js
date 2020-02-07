@@ -3,7 +3,9 @@
 		var res_div=$("#res");
 		function run(){
 			var list=$(".type_root");
+			//console.log("start");
 			var attribute=globla_function.get_attributes(list,$("#res_o"));
+			//console.log("end");
 			var res_damage=(attribute[globla_function.get_damage_type()]+(attribute.damage||0))*(100+(attribute.damage_||0)+20)*0.01;
 			var critical_hit=attribute.critical_hit||0;
 			if(critical_hit>100)critical_hit=100;
