@@ -42,6 +42,7 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 				this.attribute_cache[name]=value;
 				myScript.$get("span",list[i])[0].innerHTML=value;
 			}
+			if(this.update) this.update();
 		}
 		item.onchange=function(ev){
 			var target;
@@ -98,7 +99,7 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 
 			//
 
-			if(this.update) this.update();
+			//if(this.update) this.update();
 		}
 
 		item.update=function(){
