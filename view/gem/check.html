@@ -1,0 +1,98 @@
+<link rel="stylesheet" type="text/css" href="<?php echo $system->ini_get('styles_url');?>gem/check.css">
+<div id="input" class="block">
+	<h1><?php echo $system->lang("gem","check.input");?></h1>
+	<div>
+		<?php echo $system->lang("gem","gem_type");?>
+		<select id="gem_type">
+			<option value="normal"><?php echo $system->lang("gem","normal_gem");?></option>
+			<option value="empowered"><?php echo $system->lang("gem","empowered_gem");?></option>
+		</select>
+		<?php echo $system->lang("gem","gem_lv");?>
+		<select id="now_lv">
+		</select>
+		<?php echo $system->lang("gem","gem_rank");?>
+		<input type="number" id="now_rank" value="1250"/>
+	</div>
+</div>
+<div id="out" class="block">
+	<h1><?php echo $system->lang("gem","check.res");?></h1>
+	<h2 id="res_dj"></h2>
+	<div id="res"></div>
+	<div id="comment"></div>
+	<p class="remark-content">*由于宝石获得的基数不同，挑选宝石时请根据自己实际情况调整，特别是大宝石，前期弄不到，差也得先用着</p>
+</div>
+
+<script type="text/javascript">
+	var get_pr=function(lv){
+		if(lv==20||lv==25) return 75;
+		return 30;
+	}
+	var input=$("#input");
+	var now_lv=$("#now_lv");
+	var now_rank=$("#now_rank");
+	var res=$("#res");
+	var out=$("#out");
+	for(var i=15;i<=25;i++){
+		now_lv.innerHTML+="<option>"+i+"</option>";
+	}
+	(input.onchange=function(){
+		var temp=[];
+		temp[now_lv.value]=parseInt(now_rank.value);
+		for(var i=parseInt(now_lv.value)-1;i>=15;i--){
+			temp[i]=temp[i+1]-get_pr(i+1);
+		}
+		for(var i=parseInt(now_lv.value)+1;i<=25;i++){
+			temp[i]=temp[i-1]+get_pr(i);
+		}
+
+		var th="<tr><th><?php echo $system->lang("gem","gem_lv");?></th>";
+		var td="<tr><th><?php echo $system->lang("gem","gem_rank");?></th>";
+		for(var i=15;i<=25;i++){
+			th+="<th>"+i+"</th>";
+			td+="<td>"+temp[i]+"</td>";
+		}
+		th+="</tr>";
+		td+="</tr>";
+		res.innerHTML="<table>"+th+td+"</table>";
+
+		var out_dj="T";
+		if(gem_type.value=="normal"){
+			if(temp[15]>=1310) out_dj="O";//Outstanding （完美）
+			else if(temp[15]>=1280) out_dj="E";//Exceeds Expectations （超出预期）
+			//else if(temp[15]>=1280) out_dj="G";//...Good
+			else if(temp[15]>=1250) out_dj="A";//Acceptable （及格）
+			else if(temp[15]>=1200) out_dj="P";//Poor  （不佳）
+			else if(temp[15]>=1150) out_dj="D";//Dreadful （差）
+			else out_dj="T";//糟糕透了
+		}else if(gem_type.value=="empowered"){
+			if(temp[15]>=1720) out_dj="O";//Outstanding （完美）
+			else if(temp[15]>=1700) out_dj="E";//Exceeds Expectations （超出预期）
+			//else if(temp[15]>=1280) out_dj="G";//...Good
+			else if(temp[15]>=1650) out_dj="A";//Acceptable （及格）
+			else if(temp[15]>=1610) out_dj="P";//Poor  （不佳）
+			else if(temp[15]>=1600) out_dj="D";//Dreadful （差）
+		}
+		out.setAttribute("res",out_dj);
+		res_dj.innerHTML=out_dj;
+		switch(out_dj){
+			case "O":
+				comment.innerHTML="<?php echo $system->lang("gem","comment.O");?>";
+				break;
+			case "E":
+				comment.innerHTML="<?php echo $system->lang("gem","comment.E");?>";
+				break;
+			case "A":
+				comment.innerHTML="<?php echo $system->lang("gem","comment.A");?>";
+				break;
+			case "P":
+				comment.innerHTML="<?php echo $system->lang("gem","comment.P");?>";
+				break;
+			case "D":
+				comment.innerHTML="<?php echo $system->lang("gem","comment.D");?>";
+				break;
+			case "T":
+				comment.innerHTML="<?php echo $system->lang("gem","comment.T");?>";
+				break;
+		}
+	})();
+</script>

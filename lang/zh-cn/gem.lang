@@ -1,0 +1,19 @@
+<?php
+$l=[
+	'gem_type'=>'宝石类型',
+	'gem_lv'=>'宝石等级',
+	'gem_rank'=>'宝石战力',
+	'check.title'=>'检测宝石战力',
+	'check.input'=>'宝石状况',
+	'check.res'=>'宝石结果',
+	'normal_gem'=>'小宝石',
+	'empowered_gem'=>'大宝石',
+	//'comment'=>[
+		'comment.O'=>'极品宝石，哇NB',
+		'comment.E'=>'还不错呦，留着吧',
+		'comment.A'=>'合格了，可以使用',
+		'comment.P'=>'普通的宝石，前期可以使用，后期请分解',
+		'comment.D'=>'垃圾宝石，分解吧',
+		'comment.T'=>'天啊，这种破宝石你还想要？'
+	//]
+];

@@ -12,6 +12,39 @@ body{
 	background: #101;
 }
 
+
+main{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.block{
+	/*float: left;*/
+	border: solid 2px #999;
+	margin: 5px;
+	border-radius: 5px;
+	background: rgba(100,100,100,0.5);
+	color: #88f;
+	padding: 5px;
+}
+input,select{
+	border:solid 1px #999;
+	background: #101;
+	color: #88f;
+	border-radius: 2px;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+td,th{
+	border: solid 1px #999;
+}
+.remark-content{
+	font-style: italic;
+	font-size: 8px;
+	color: #66a;
+}
 #version_info,#copyright{
 	text-align: center;
 }
