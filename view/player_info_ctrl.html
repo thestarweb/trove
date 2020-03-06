@@ -1,5 +1,5 @@
 	<div id="info_ctrl" class="block" style="display: none">
-		<span id="player_info_ctrl_save" class="button">保存数据</span>
+		<span id="player_info_ctrl_save" class="button"><?php echo $system->lang("base","save");?></span>
 	</div>
 	<script type="text/javascript">
 		suc_u_load(function(data){
@@ -18,7 +18,7 @@
 					ajax.page="<?php echo URLROOT;?>player_info/save_info";
 					ajax.callback=function(res){
 						if(res.json.is_ok){
-							myScript.message("保存成功",'');
+							myScript.message("<?php echo $system->lang("base","success");?>",'');
 						}
 					}
 					ajax.send();

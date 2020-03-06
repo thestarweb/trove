@@ -71,13 +71,13 @@
 	</script>
 	<div id="main">
 		<div id="basevalue" class="type_root block">
-			<div>基础数据<div class="checkbutton"><div class="show"></div></div></div>
+			<div><?php echo $system->lang("base","basevalue");?><div class="checkbutton"><div class="show"></div></div></div>
 			<div id="basevalue_show" style="display: none;">
 			</div>
 		</div>
 		<div id="class" class="type_root">
 			<div class="block">
-				<div>选择职业：<select id="select_class"></select><div class="checkbutton"><div class="show"></div></div></div>
+				<div>class：<select id="select_class"></select><div class="checkbutton"><div class="show"></div></div></div>
 				<div style="display: none;">
 					<div id="class_lv_header"></div>
 					<div id="class_lv_body"></div>
@@ -87,7 +87,7 @@
 		</div>
 		<div id="gem" class="type_root block">
 			<div>
-				宝石数据
+				<?php echo $system->lang("base","gem");?>
 				<span id="main_peibi">
 					<input class="peibi" type="number" min="0"/>
 					<input class="peibi" type="number" disabled="disabled"/>
@@ -118,37 +118,43 @@
 			<div id="gem_res"></div>
 		</div>
 		<div id="dragon" class="type_root block">
-			<div>龙<div class="checkbutton"><div class="show"></div></div></div>
+			<div><?php echo $system->lang("base","dragon");?><div class="checkbutton"><div class="show"></div></div></div>
 			<div id="dragon_data" style="display: none;"></div>
 			<div id="dragon_res"></div>
 		</div>
 		<div id="mastery" class="type_root block">
-			<div>专精</div>
+			<div><?php echo $system->lang("base","mastery");?></div>
 			<div>
-				<div>等级 <input type="number" id="mastery_lv" value="600"/>＋<input type="number" id="mastery_lv_point" value="0"/>/<spawn id="mastery_need"></spawn>　=　专精点数 <input type="number" id="mastery_point"></div>
+				<div>
+					<?php echo $system->lang("base","mastery_point");?> <input type="number" id="mastery_point"/>
+					=
+					<?php echo $system->lang("base","lv");?> <input type="number" id="mastery_lv" value="600"/>
+					+
+					<input type="number" id="mastery_lv_point" value="0"/>/<spawn id="mastery_need"></spawn>
+				</div>
 				<div id="mastery_bar"><div></div></div>
 			</div>
 		</div>
 		<div id="equipment" class="type_root block">
-			<div>装备<div class="checkbutton"><div class="show"></div></div></div>
+			<div><?php echo $system->lang("base","equipment");?><div class="checkbutton"><div class="show"></div></div></div>
 			<div id="equipment_data" style="display: none;">
 				<div id="equipment_body"></div>
 				<div id="equipment_res"></div>
 			</div>
 		</div>
 		<div id="allies" class="type_root block">
-			<div>宠物<div class="checkbutton"><div class="show"></div></div></div>
+			<div><?php echo $system->lang("base","allies");?><div class="checkbutton"><div class="show"></div></div></div>
 			<div></div>
 		</div>
 		<div id="club" class="type_root block">
-			<div>工会<div class="checkbutton"><div class="show"></div></div></div>
+			<div><?php echo $system->lang("base","club");?><div class="checkbutton"><div class="show"></div></div></div>
 			<div style="display: none;">
 				<div id="club_body"></div>
 				<div id="club_res"></div>
 			</div>
 		</div>
 		<div id="food" class="type_root block">
-			<div>食物<div class="checkbutton"><div class="show"></div></div></div>
+			<div><?php echo $system->lang("base","food");?><div class="checkbutton"><div class="show"></div></div></div>
 			<div><select><option value="">无</option></select></div>
 		</div>
 		<div id="res" class="block">
@@ -159,9 +165,9 @@
 			<div class="block">
 				<div>面板属性<div class="checkbutton"><div class="hidden"></div></div></div>
 				<div>
-					<div class="attribute_item"><span class="attribute_name">伤害</span><span class="attribute_value" id="res_damage">0</span></div>
-					<div class="attribute_item"><span class="attribute_name">血量</span><span class="attribute_value" id="res_health">0</span></div>
-					<div class="attribute_item"><span class="attribute_name">coe</span><span class="attribute_value" id="res_coe">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","damage");?></span><span class="attribute_value" id="res_damage">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","health");?></span><span class="attribute_value" id="res_health">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","coe");?></span><span class="attribute_value" id="res_coe">0</span></div>
 				</div>
 			</div>
 		</div>
@@ -180,18 +186,18 @@
 						<input class="peibi" type="number" min="0"/>
 						<input class="peibi" type="number" disabled="disabled"/>
 					</span>
-					钻龙 <input class="has_dragon" type="checkbox" {dragon}/>
+					<?php echo $system->lang('base','primordial_dragon')?> <input class="has_dragon" type="checkbox" {dragon}/>
 					<div class="checkbutton"><div class="show"></div></div>
 				</div>
 				<div style="display: none;">
 					<div class="gem_type">
-						<div class="name">大宝石</div>@__gem__#type=empowered#cosmic_gem={cosmic_gem}
+						<div class="name"><?php echo $system->lang("gem","empowered_gem");?></div>@__gem__#type=empowered#cosmic_gem={cosmic_gem}
 					</div>
 					<div class="gem_type">
-						<div class="name">小宝石</div>@__gem__#type=normal#cosmic_gem={cosmic_gem}
+						<div class="name"><?php echo $system->lang("gem","normal_gem");?></div>@__gem__#type=normal#cosmic_gem={cosmic_gem}
 					</div>
 					<div class="gem_type">
-						<div class="name">小宝石</div>@__gem__#type=normal#cosmic_gem={cosmic_gem}
+						<div class="name"><?php echo $system->lang("gem","normal_gem");?></div>@__gem__#type=normal#cosmic_gem={cosmic_gem}
 					</div>
 				</div>
 			</div>
@@ -201,12 +207,12 @@
 			<div class="gem_data" type="{type}">
 				<div>
 					<div></div>
-					<div>属性1</div>
-					<div>属性2</div>
-					<div>属性3</div>
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
 				</div>
 				<div class="gem_attribute_type">
-					<div>宝石属性</div>
+					<div><?php echo $system->lang('base','attribute');?></div>
 					<div>
 						<select class="gem_attribute_select" selectedOptions="damage"></select>
 					</div>
@@ -283,27 +289,27 @@
 		myScript.template_init();
 
 		var attributes={
-			physical_damage:{name:"物理伤害",fixed:0,gem:true},
-			physical_damage_:{name:"物理伤害%",fixed:0},
-			magic_damage:{name:"魔法伤害",fixed:0,gem:true},
-			magic_damage_:{name:"魔法伤害%",fixed:0},
-			damage:{name:"伤害"},
-			damage_:{name:"伤害加成",fixed:1},
-			critical_damage:{name:"暴击伤害",fixed:2,gem:true},
-			critical_hit:{name:"暴击率",fixed:2,gem:true},
-			max_health:{name:"最大生命",fixed:0,gem:true},
-			max_health_:{name:"百分比生命",fixed:0,gem:true},
-			health_regeneration:{name:"生命恢复"},
-			health_regeneration_:{name:"生命恢复%"},
-			max_energy:{name:"最大能量"},
-			energy_regeneration:{name:"回能"},
-			energy_regeneration_:{name:"回能加成"},
-			lasermancy:{name:"镭射"},
-			jump:{name:"跳跃"},
-			light:{name:"光",fixed:0,gem:false,cosmic_gem:true},
-			magic_find:{name:"魔寻",fixed:0,gem:false},
-			attack_speed:{name:"攻速"},
-			move_speed:{name:"移速"}
+			physical_damage:{name:"<?php echo $system->lang('base','physical_damage');?>",fixed:0,gem:true},
+			physical_damage_:{name:"<?php echo $system->lang('base','physical_damage_');?>",fixed:0},
+			magic_damage:{name:"<?php echo $system->lang('base','magic_damage');?>",fixed:0,gem:true},
+			magic_damage_:{name:"<?php echo $system->lang('base','magic_damage_');?>",fixed:0},
+			damage:{name:"<?php echo $system->lang('base','damage');?>"},
+			damage_:{name:"<?php echo $system->lang('base','damage_');?>",fixed:1},
+			critical_damage:{name:"<?php echo $system->lang('base','critical_damage');?>",fixed:2,gem:true},
+			critical_hit:{name:"<?php echo $system->lang('base','critical_hit');?>",fixed:2,gem:true},
+			max_health:{name:"<?php echo $system->lang('base','max_health');?>",fixed:0,gem:true},
+			max_health_:{name:"<?php echo $system->lang('base','max_health_');?>",fixed:0,gem:true},
+			health_regeneration:{name:"<?php echo $system->lang('base','health_regeneration');?>"},
+			health_regeneration_:{name:"<?php echo $system->lang('base','health_regeneration_');?>"},
+			max_energy:{name:"<?php echo $system->lang('base','max_energy');?>"},
+			energy_regeneration:{name:"<?php echo $system->lang('base','energy_regeneration');?>"},
+			energy_regeneration_:{name:"<?php echo $system->lang('base','energy_regeneration_');?>"},
+			lasermancy:{name:"<?php echo $system->lang('base','lasermancy');?>"},
+			jump:{name:"<?php echo $system->lang('base','jump');?>"},
+			light:{name:"<?php echo $system->lang('base','light');?>",fixed:0,gem:false,cosmic_gem:true},
+			magic_find:{name:"<?php echo $system->lang('base','magic_find');?>",fixed:0,gem:false},
+			attack_speed:{name:"<?php echo $system->lang('base','attack_speed');?>"},
+			move_speed:{name:"<?php echo $system->lang('base','move_speed');?>"}
 		};
 		var types=$(".type_root");
 		for(var i=0;i<types.length;i++){
