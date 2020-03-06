@@ -77,7 +77,7 @@
 		</div>
 		<div id="class" class="type_root">
 			<div class="block">
-				<div>class：<select id="select_class"></select><div class="checkbutton"><div class="show"></div></div></div>
+				<div><?php echo $system->lang("base","class");?> : <select id="select_class"></select><div class="checkbutton"><div class="show"></div></div></div>
 				<div style="display: none;">
 					<div id="class_lv_header"></div>
 					<div id="class_lv_body"></div>
@@ -165,9 +165,13 @@
 			<div class="block">
 				<div>面板属性<div class="checkbutton"><div class="hidden"></div></div></div>
 				<div>
-					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","damage");?></span><span class="attribute_value" id="res_damage">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","magic_damage");?></span><span class="attribute_value" id="res_magic_damage">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","physical_damage");?></span><span class="attribute_value" id="res_physical_damage">0</span></div>
 					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","health");?></span><span class="attribute_value" id="res_health">0</span></div>
 					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","coe");?></span><span class="attribute_value" id="res_coe">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","energy_regeneration");?></span><span class="attribute_value" id="res_energy_regeneration">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","max_energy");?></span><span class="attribute_value" id="res_max_energy">0</span></div>
+					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","health_regeneration");?></span><span class="attribute_value" id="res_health_regeneration">0</span></div>
 				</div>
 			</div>
 		</div>

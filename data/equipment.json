@@ -4,12 +4,12 @@
 			"crystal":[
 				{
 					"as":-1,
-					"attributes":["light"],
+					"attributes":["damage"],
 					"default":0
 				},
 				{
 					"as":-1,
-					"attributes":["damage"],
+					"attributes":["light"],
 					"default":0
 				},
 				{
@@ -102,8 +102,8 @@
 	"data":{
 		"crystal":{
 			"lv3_5star":[
-				{"light":650},
-				{"max_health":23400,"magic_damage":10400,"physical_damage":10400},
+				{"light":650,"magic_damage":10400,"physical_damage":10400},
+				{"max_health":23400,"light":1100},
 				{"critical_damage":42.9,"energy_regeneration":200,"attack_speed":33,"move_speed":20},//回能数据待定
 				{"critical_hit":5.5,"jump":22,"magic_find":195,"magic_damage":3432,"physical_damage":3432}
 			]
