@@ -7,6 +7,8 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 		var self=$.set("div",data);
 		self.innerHTML=myScript.template_get_html("dragon_type",{name:i});
 		self.className="dragon_type";
+		self.totla=0;
+		self.has=0;
 		var data_div=myScript.$get(".dragon_data",self)[0];
 		for(var j=0;j<dragon[i].length;j++){
 			var item=$.set("div",data_div);
@@ -18,7 +20,11 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 					return myScript.$get("input",this)[0].checked?dragon[i][j].attribute:{};
 				}
 			})(i,j);
+
+			self.totla++;
+			self.has++;
 		}
+		myScript.$get(".number",self)[0].innerHTML=self.has+"/"+self.totla;
 
 	}
 	$("#dragon").run=function(){
@@ -31,8 +37,17 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 		return attribute_cache;
 	}
 
-	$("#dragon").onchange=function(){
+	$("#dragon").onchange=function(ev){
 		this.run();
+		console.log(ev);
+		for(var i=0;i<ev.path.length;i++){
+			if(ev.path[i].className=="dragon_type"){
+				var self=ev.path[i];
+				if(ev.srcElement.checked) self.has++;
+				else self.has--;
+				myScript.$get(".number",self)[0].innerHTML=self.has+"/"+self.totla;
+			}
+		}
 	}
 	$("#dragon").run();
 });

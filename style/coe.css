@@ -101,6 +101,12 @@
 	width: 100%;
 }
 
+/*龙数量统计*/
+.dragon_type .number{
+	position: absolute;
+	right: 25px;
+}
+
 /*专精*/
 #mastery #mastery_lv{
 	width: 50px;
