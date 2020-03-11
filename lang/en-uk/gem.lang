@@ -1,0 +1,19 @@
+<?php
+return [
+	'gem_type'=>'Gem Type',
+	'gem_lv'=>'Gem lv',
+	'gem_rank'=>'Gem Rank',
+	'check.title'=>'Check Your Gem',
+	'check.input'=>'Info of Your Gem',
+	'check.res'=>'Result',
+	'normal_gem'=>'normal',
+	'empowered_gem'=>'empowered',
+	//'comment'=>[
+		'comment.O'=>'This gem is great',
+		'comment.E'=>'This gem is good, use it will',
+		'comment.A'=>'It just OK, but it\'s also usefull',
+		'comment.P'=>'Normal gem, maybe you can get a better one',
+		'comment.D'=>'Jast a bad gem, please try to get a better one',
+		'comment.T'=>'What a terrible gem! Will you keep it?'
+	//]
+];

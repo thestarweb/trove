@@ -157,7 +157,7 @@
 }
 .attribute_item{
 	display: inline-block;
-	width: 170px;
+	width: 220px;
 	height: 14px;
 	border: 1px solid #88f;
 	border-radius: 14px;
@@ -168,7 +168,7 @@
 	display: inline-block;
 }
 .attribute_name{
-	width: 80px;
+	width: 140px;
 	text-align: right;
 }
 .attribute_name::after{

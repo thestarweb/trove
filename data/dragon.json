@@ -315,7 +315,7 @@
 		},
 		"has": true
 	},{
-		"name":"Cy and Sanguine, the Twin Plagues ",
+		"name":"Cy and Sanguine, the Twin Plagues",
 		"cn":"双子瘟疫",
 		"attribute":{
 			"max_health":1000,
@@ -430,7 +430,7 @@
 	],
 	"o":[
 	// {
-	// 	"name": "Disaeon the Immortal ",
+	// 	"name": "Disaeon the Immortal",
 	// 	"attribute": {
 	// 		"max_health": 1000,
 	// 		"max_energy": 1,
@@ -440,7 +440,7 @@
 	// 	"has": true
 	// },
 	 {
-		"name": "Indurion, the Unwavering ",
+		"name": "Indurion, the Unwavering",
 		"cn":"虚空龙",
 		"attribute": {
 			"critical_damage": 10,
@@ -449,7 +449,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Olhukoi, the Moonlit Muse ",
+		"name": "Olhukoi, the Moonlit Muse",
 		"cn":"月魂龙",
 		"attribute": {
 			"max_health": 1000,
@@ -459,7 +459,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Rhom-10, Dissent’s Roar ",
+		"name": "Rhom-10, Dissent’s Roar",
 		"cn":"电阻龙",
 		"attribute": {
 			"attack_speed": 7,
@@ -468,7 +468,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Hoshizora, Luminary of Hope ",
+		"name": "Hoshizora, Luminary of Hope",
 		"cn":"电阻龙",
 		"attribute": {
 			"attack_speed": 7,
@@ -477,11 +477,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Luxarion, Scion of the Hoard ",
-		"attribute": {},
-		"has": true
-	}, {
-		"name": "Yzzuli of the Honeybreeze ",
+		"name": "Yzzuli of the Honeybreeze",
 		"cn":"蜜蜂",
 		"attribute": {
 			"max_health": 1000,
@@ -491,7 +487,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Shaoran, Sage of the Eastern Ranges ",
+		"name": "Shaoran, Sage of the Eastern Ranges",
 		"cn":"东境贤者 蓝鳞龙",
 		"attribute": {
 			"max_health_": 20,
@@ -500,7 +496,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Amatrix, the Hexed ",
+		"name": "Amatrix, the Hexed",
 		"cn":"战争之王 炸弹二期的龙",
 		"attribute": {
 			"max_health":1000,

@@ -1,0 +1,12 @@
+<?php
+return [
+	'Gunslinger'=>'Gunslinger',
+	'IceSage'=>'IceSage',
+	'FaeTrickster'=>'FaeTrickster',
+	'Dracolyte'=>'Dracolyte',
+	'NeonNinja'=>'NeonNinja',
+	'Revenant'=>'Revenant',
+	'Knight'=>'Knight',
+	'Vanguardian'=>'Vanguardian',
+	'ShadowHunter'=>'ShadowHunter'
+];

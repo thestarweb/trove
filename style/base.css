@@ -45,7 +45,7 @@ td,th{
 	font-size: 8px;
 	color: #66a;
 }
-#version_info,#copyright{
+footer p{
 	text-align: center;
 }
 

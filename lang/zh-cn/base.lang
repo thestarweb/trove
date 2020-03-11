@@ -9,6 +9,7 @@ return [
 	'mastery'=>'专精',
 	'allies'=>'宠物',
 	'food'=>'食物',
+	'subclass'=>'副职业',
 
 	'lv'=>'等级',
 	'mastery_point'=>'专精点',

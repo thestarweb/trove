@@ -1,5 +1,14 @@
 </main>
 <footer>
+	<p id="lang-list">
+<?php $langlist=$this->lang_list(); $nowlang=$this->get_user_lang();foreach ($langlist as $k=>$v) {
+if($k==$nowlang){?>
+	<?php echo $v;?>
+<?php }else{ ?>
+		<a href="?lang=<?php echo $k;?>"><?php echo $v;?></a>
+<?php }
+} ?>
+	</p>
 	<p id="version_info"><?php echo VERSION;?>(<?php echo MAKE_TIME; ?>) by star_ss</p>
 	<p id="copyright"><?php echo COPY;?></p>
 </footer>

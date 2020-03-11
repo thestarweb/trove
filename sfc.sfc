@@ -6,13 +6,14 @@ if(!defined('system::VISION')||system::VISION<18){
 }
 //版本及版权信息
 			$this->namespace='star\\web\\trove';
-			define('VERSION','1.1.0.0081');
+			define('VERSION','1.1.0.0082');
 			define('MAKE_TIME','2020-03-11');
 			define('COPY','&copy;2013-2020');
 			$this->cfgs['succ_dir']='../succ/';
 			$this->cfgs['succ_app_id']='1';
 			$this->cfgs['succ_app_key']='';
 			$this->cfgs['allow_PCViewInMobile']=1;
+			$this->cfgs['lang_list']='zh-cn,en-uk';
 			function loaded_ok($system){
 				require_once $system->ini_get('succ_dir').'/succ.php';
 				$system->succ=succ::get_obj();
