@@ -100,9 +100,9 @@
 	var yz_option_str=""
 	for(var j in attributes){//创建列表
 		if(attributes[j].gem){
-			option_str+="<option value='"+j+"'>"+attributes[j].name+"</option>";
+			option_str+="<option value='"+j+"'>"+$.lang("base."+j)+"</option>";
 		}else if(attributes[j].cosmic_gem){
-			yz_option_str+="<option value='"+j+"'>"+attributes[j].name+"</option>";
+			yz_option_str+="<option value='"+j+"'>"+$.lang("base."+j)+"</option>";
 		}
 	}
 	for(var i=0;i<list.length;i++){//将列表插入到选项框

@@ -1,4 +1,4 @@
-(function(){
+$(function(){
 	//结果控制
 		var res_div=$("#res");
 		var el_res_magic_damage=$("#res_magic_damage");
@@ -33,9 +33,9 @@
 			if(critical_hit>100)critical_hit=100;
 
 			set_value(el_res_magic_damage,res_damages.magic_damage.base,res_damages.magic_damage.addition,
-				attributes.magic_damage.name,attributes.damage_.name);
+				$.lang("base.magic_damage"),$.lang("base.damage_"));
 			set_value(el_res_physical_damage,res_damages.physical_damage.base,res_damages.physical_damage.addition,
-				attributes.physical_damage.name,attributes.damage_.name);
+				$.lang("base.physical_damage"),$.lang("base.damage_"));
 			el_res_coe.innerHTML=(res_damages[globla_function.get_damage_type()].value*(10000+attribute.critical_damage*critical_hit)/10000).toFixed(2);
 
 			var glist={//需要算加成的属性名及对应节点
@@ -44,11 +44,11 @@
 				energy_regeneration:el_res_energy_regeneration
 			}
 			for(var i in glist){
-				set_value(glist[i],attribute[i],attribute[i+"_"],attributes[i].name,attributes[i+"_"].name);
+				set_value(glist[i],attribute[i],attribute[i+"_"],$.lang("base."+i),$.lang("base."+i+"_"));
 			}
 
 			el_res_max_energy.innerHTML=(attribute.max_energy||0);
 		}
 		$(".type_root").set("update",run);
 		run();
-})();
+});

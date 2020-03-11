@@ -18,7 +18,7 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 				var options=myScript.$get("option",list[i]);
 				for(var j=0;j<options.length;j++){
 					var s=globla_function.get_attribute_name(options[j].getAttribute("dnmae"));
-					options[j].innerHTML=s;
+					options[j].innerHTML=$.lang("base."+s);
 					options[j].value=s
 					//globla_function.get_attribute_name(t[k])
 				}

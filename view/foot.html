@@ -3,5 +3,17 @@
 	<p id="version_info"><?php echo VERSION;?>(<?php echo MAKE_TIME; ?>) by star_ss</p>
 	<p id="copyright"><?php echo COPY;?></p>
 </footer>
+<script type="text/javascript">
+(function(){
+	var ajax=$.ajax();
+	ajax.page="<?php echo URLROOT;?>index/lang/<?php echo $this->get_user_lang();?>";
+	ajax.keep=true;
+	ajax.callback=function(a){
+		myScript.lang.set(a.json);
+	}
+	ajax.send();
+})();
+
+</script>
 </body>
 </html>

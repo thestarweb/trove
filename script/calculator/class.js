@@ -25,7 +25,7 @@ myScript.fast_ajax(DATA_BASE()+"class_info.json",function(ajax){
 				//遍历列
 				if(!cache[j]){
 					//列不存在，先创建
-					$.set("span",class_lv_header).innerHTML=attributes[j]?attributes[j].name:j;
+					$.set("span",class_lv_header).innerHTML=$.lang("base."+j);
 					now_list[NO]=$.set("span",p);
 					cache[j]=NO++;
 				}
@@ -53,8 +53,8 @@ myScript.fast_ajax(DATA_BASE()+"class_info.json",function(ajax){
 	}
 	for(var i in classes){
 		var item=$.set("option",select);
-		item.innerHTML=i;
-		item.var=i;
+		item.innerHTML=$.lang("class."+i);
+		item.value=i;
 	}
 
 	//绑定获取数据的函数至dom上

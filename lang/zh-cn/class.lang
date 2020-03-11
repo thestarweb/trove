@@ -1,0 +1,12 @@
+<?php
+return [
+	'Gunslinger'=>'枪械',
+	'IceSage'=>'冰法',
+	'FaeTrickster'=>'妖精',
+	'Dracolyte'=>'火龙法师',
+	'NeonNinja'=>'忍者',
+	'Revenant'=>'无头',
+	'Knight'=>'骑士',
+	'Vanguardian'=>'先锋',
+	'ShadowHunter'=>'暗猎'
+];
