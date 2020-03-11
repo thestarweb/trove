@@ -1,5 +1,5 @@
 <?php
-namespace strove; 
+namespace star\web\trove; 
 class index_control{
 	public function index_page($system){
 		//

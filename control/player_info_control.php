@@ -1,5 +1,5 @@
 <?php
-namespace strove; 
+namespace star\web\trove; 
 class player_info_control{
 	public function index_page($system){
 		$system->show_head('coe计算器 by star_ss');

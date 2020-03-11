@@ -1,5 +1,5 @@
 <?php
-$l=[
+return [
 	'gem_type'=>'宝石类型',
 	'gem_lv'=>'宝石等级',
 	'gem_rank'=>'宝石战力',

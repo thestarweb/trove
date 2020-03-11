@@ -1,5 +1,5 @@
 <?php
-$l=[
+return [
 	'basevalue'=>'基础数据',
 	'class'=>'职业',
 	'gem'=>'宝石',

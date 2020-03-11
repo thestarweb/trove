@@ -1,5 +1,5 @@
 <?php
-namespace strove; 
+namespace star\web\trove; 
 class player_info_server{
 	const table='@%_player_baseinfo';
 	private $system;
