@@ -155,15 +155,15 @@
 		</div>
 		<div id="food" class="type_root block">
 			<div><?php echo $system->lang("base","food");?><div class="checkbutton"><div class="show"></div></div></div>
-			<div><select><option value="">无</option></select></div>
+			<div><select><option value=""><?php echo $system->lang('base','none');?></option></select></div>
 		</div>
 		<div id="res" class="block">
 			<div class="block">
-				<div>原始结果<div class="checkbutton"><div class="show"></div></div></div>
+				<div><?php echo $system->lang('base','OriginalResult');?><div class="checkbutton"><div class="show"></div></div></div>
 				<div id="res_o" style="display: none;"></div>
 			</div>
 			<div class="block">
-				<div>面板属性<div class="checkbutton"><div class="hidden"></div></div></div>
+				<div><?php echo $system->lang('base','GameResult');?><div class="checkbutton"><div class="hidden"></div></div></div>
 				<div>
 					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","magic_damage");?></span><span class="attribute_value" id="res_magic_damage">0</span></div>
 					<div class="attribute_item"><span class="attribute_name"><?php echo $system->lang("base","physical_damage");?></span><span class="attribute_value" id="res_physical_damage">0</span></div>
@@ -185,7 +185,7 @@
 				<div class="type_name">
 					<span>{name}</span>
 					<span class="gem_peibi">
-						<input class="peibi" type="number" min="0"/>
+							<input class="peibi" type="number" min="0"/>
 						<input class="peibi" type="number" disabled="disabled"/>
 						<input class="peibi" type="number" min="0"/>
 						<input class="peibi" type="number" disabled="disabled"/>
@@ -228,19 +228,19 @@
 					</div>
 				</div>
 				<div>
-					<div>跳1</div>
+					<div><?php echo $system->lang('base','GemJump');?></div>
 					<div class="jump"><input type="range" min="0" max="2" value="0" step="1"/></div>
 				</div>
 				<div>
-					<div>跳2</div>
+					<div><?php echo $system->lang('base','GemJump');?></div>
 					<div class="jump"><input type="range" min="0" max="2" value="0" step="1"/></div>
 				</div>
 				<div>
-					<div>跳3</div>
+					<div><?php echo $system->lang('base','GemJump');?></div>
 					<div class="jump"><input type="range" min="0" max="2" value="0" step="1"/></div>
 				</div>
 				<div class="gem_res">
-					<div>宝石结论</div>
+					<div><?php echo $system->lang('gem','check.res');?></div>
 					<div><span>0</span></div>
 					<div><span>0</span></div>
 					<div><span>0</span></div>

@@ -2,19 +2,19 @@
 (function(){
 	var gem_data=[
 		{
-			name:"红宝石",
+			name:"FireGem",
 			dragon:true//龙
 		},
 		{
-			name:"黄宝石",
+			name:"AirGem",
 			dragon:true
 		},
 		{
-			name:"蓝宝石",
+			name:"WaterGem",
 			dragon:true
 		},
 		{
-			name:"宇宙宝石",
+			name:"CosmicGem",
 			cosmic_gem:true,
 			dragon:false
 		},
@@ -89,7 +89,7 @@
 	//创建模板
 	for(var i=0;i<gem_data.length;i++){
 		var item=$.set("div",$("#gem_data"));
-		item.innerHTML=myScript.template_get_html("gem_class",{name:gem_data[i].name,dragon:gem_data[i].dragon?"checked":"",cosmic_gem:gem_data[i].cosmic_gem})//mb_gem_class.replace("__gem_class__","gem").replace("__name__",gem_data[i].name).replace("__gem__",mb_gem);
+		item.innerHTML=myScript.template_get_html("gem_class",{name:$.lang('gem.'+gem_data[i].name),dragon:gem_data[i].dragon?"checked":"",cosmic_gem:gem_data[i].cosmic_gem})//mb_gem_class.replace("__gem_class__","gem").replace("__name__",gem_data[i].name).replace("__gem__",mb_gem);
 		//item.innerHTML=mb.replace("__gem__","gem"+i).replace("__name__",gem_data[i].name);
 		//item.className="gem_item";
 

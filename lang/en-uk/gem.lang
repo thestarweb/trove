@@ -8,12 +8,16 @@ return [
 	'check.res'=>'Result',
 	'normal_gem'=>'normal',
 	'empowered_gem'=>'empowered',
-	//'comment'=>[
-		'comment.O'=>'This gem is great',
-		'comment.E'=>'This gem is good, use it will',
-		'comment.A'=>'It just OK, but it\'s also usefull',
-		'comment.P'=>'Normal gem, maybe you can get a better one',
-		'comment.D'=>'Jast a bad gem, please try to get a better one',
-		'comment.T'=>'What a terrible gem! Will you keep it?'
-	//]
+	'FireGem'=>'Fire Gem',
+	'AirGem'=>'Air Gem',
+	'WaterGem'=>'Water Gem',
+	'CosmicGem'=>'Cosmic Gem',
+	'comment'=>[
+		'O'=>'This gem is great',
+		'E'=>'This gem is good, use it will',
+		'A'=>'It just OK, but it\'s also usefull',
+		'P'=>'Normal gem, maybe you can get a better one',
+		'D'=>'Jast a bad gem, please try to get a better one',
+		'T'=>'What a terrible gem! Will you keep it?'
+	]
 ];

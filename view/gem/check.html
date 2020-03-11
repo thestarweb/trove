@@ -23,6 +23,7 @@
 </div>
 
 <script type="text/javascript">
+$(function(){
 	var get_pr=function(lv){
 		if(lv==20||lv==25) return 75;
 		return 30;
@@ -74,25 +75,7 @@
 		}
 		out.setAttribute("res",out_dj);
 		res_dj.innerHTML=out_dj;
-		switch(out_dj){
-			case "O":
-				comment.innerHTML="<?php echo $system->lang("gem","comment.O");?>";
-				break;
-			case "E":
-				comment.innerHTML="<?php echo $system->lang("gem","comment.E");?>";
-				break;
-			case "A":
-				comment.innerHTML="<?php echo $system->lang("gem","comment.A");?>";
-				break;
-			case "P":
-				comment.innerHTML="<?php echo $system->lang("gem","comment.P");?>";
-				break;
-			case "D":
-				comment.innerHTML="<?php echo $system->lang("gem","comment.D");?>";
-				break;
-			case "T":
-				comment.innerHTML="<?php echo $system->lang("gem","comment.T");?>";
-				break;
-		}
+		comment.innerHTML=$.lang("gem.comment."+out_dj);
 	})();
+});
 </script>

@@ -10,6 +10,10 @@ return [
 	'allies'=>'Allies',
 	'food'=>'Food',
 	'subclass'=>'Sub Class',
+	'none'=>'none',
+	'GemJump'=>'Gem Jump',
+	'OriginalResult'=>'Original Result',
+	'GameResult'=>'Game Result',
 
 	'lv'=>'lv',
 	'mastery_point'=>'mastery point',

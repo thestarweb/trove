@@ -10,6 +10,10 @@ return [
 	'allies'=>'宠物',
 	'food'=>'食物',
 	'subclass'=>'副职业',
+	'none'=>'无',
+	'GemJump'=>'宝石跳跃',
+	'OriginalResult'=>'原始结果',
+	'GameResult'=>'面板属性',
 
 	'lv'=>'等级',
 	'mastery_point'=>'专精点',

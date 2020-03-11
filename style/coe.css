@@ -67,9 +67,8 @@
 	overflow: hidden;
 }
 .gem_type .name{
-	line-height: 35px;
-	width: 15px;
-	padding: 2px;
+	float: none;
+	text-align: center;
 }
 .gem_type div{
 	float: left;
@@ -90,6 +89,7 @@
 	height: 75px;
 	overflow: hidden;
 	width: 20px;
+	margin: 0 auto;
 }
 .jump input{
 	margin-top:8px;
