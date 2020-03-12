@@ -11,7 +11,7 @@ class index_control{
 	}
 	public function lang_page($system,$c='zh-cn'){
 		if(in_array($c,$system->ini_get('lang_list'))){
-			$loads=explode(',','class,base,gem');
+			$loads=explode(',','class,base,gem,dragon');
 			$langdir=$system->ini_get('lang_dir');
 			$res=[];
 			foreach ($loads as $v) {

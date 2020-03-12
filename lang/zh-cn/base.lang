@@ -46,5 +46,6 @@ return [
 	'light'=>'光',
 	'magic_find'=>'魔寻',
 	'attack_speed'=>'攻速',
-	'move_speed'=>'移速'
+	'move_speed'=>'移速',
+	'stability'=>'稳定性'
 ];

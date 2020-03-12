@@ -5,7 +5,7 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 	var data=$("#dragon_data");
 	for(var i in dragon){
 		var self=$.set("div",data);
-		self.innerHTML=myScript.template_get_html("dragon_type",{name:i});
+		self.innerHTML=myScript.template_get_html("dragon_type",{name:$.lang('dragon.'+i)});
 		self.className="dragon_type";
 		self.totla=0;
 		self.has=0;
@@ -13,7 +13,7 @@ myScript.fast_ajax(DATA_BASE()+"dragon.json",function(ajax){
 		for(var j=0;j<dragon[i].length;j++){
 			var item=$.set("div",data_div);
 			item.className="dragon_item block";
-			$.set("div",item).innerHTML=dragon[i][j].name+"-"+dragon[i][j].cn+"<input type='checkbox' checked/>";
+			$.set("div",item).innerHTML="<input type='checkbox' checked/>"+$.lang('dragon.'+dragon[i][j].name);
 			globla_function.display_attributes(dragon[i][j].attribute,$.set("div",item));
 			item.get_attribute=(function(i,j){
 				return function(){

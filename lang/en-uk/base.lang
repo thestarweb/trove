@@ -46,5 +46,6 @@ return [
 	'light'=>'light',
 	'magic_find'=>'magic find',
 	'attack_speed'=>'attack speed',
-	'move_speed'=>'move speed'
+	'move_speed'=>'move speed',
+	'stability'=>'stability'
 ];

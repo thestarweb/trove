@@ -1,7 +1,6 @@
 {
 	"legendary": [{
-		"name": "Fortras, the Herald of Battle",
-		"cn":"战争之兆（绿龙）",
+		"name": "Fortras,theHeraldofBattle",
 		"attribute": {
 			"health_regeneration_": 3,
 			"physical_damage": 500,
@@ -9,8 +8,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Albairn, Voice of Dawn",
-		"cn":"破晓之声（金龙/bgm龙）",
+		"name": "Albairn,VoiceofDawn",
 		"attribute": {
 			"critical_hit": 0.6,
 			"max_health": 1000,
@@ -19,8 +17,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Selene the Celestial Storm",
-		"cn":"星界风暴（商城）",
+		"name": "SelenetheCelestialStorm",
 		"attribute": {
 			"max_health": 1000,
 			"critical_hit": 1,
@@ -28,8 +25,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Yorinn, the Dusk Shadow",
-		"cn":"黄昏之影（商城）",
+		"name": "Yorinn,theDuskShadow",
 		"attribute": {
 			"max_health": 1000,
 			"critical_damage": 10,
@@ -37,8 +33,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Erel, the Ironbolt",
-		"cn":"铁剑（商城）",
+		"name": "Erel,theIronbolt",
 		"attribute": {
 			"max_health": 1000,
 			"health_regeneration": 1750,
@@ -46,8 +41,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Erimatra, Scourge of the Everdark",
-		"cn":"永恒黑暗之天灾（暗影箱-英飞凌龙蛋）",
+		"name": "Erimatra,ScourgeoftheEverdark",
 		"attribute": {
 			"critical_hit": 1,
 			"magic_damage": 250,
@@ -55,8 +49,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Panatea, the Partifier",
-		"cn":"皮娜塔亚·派对伙伴",
+		"name": "Panatea,thePartifier",
 		"attribute": {
 			"attack_speed": 7,
 			"magic_damage": 250,
@@ -64,8 +57,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Flakbeard, the Relentless",
-		"cn":"无情着",
+		"name": "Flakbeard,theRelentless",
 		"attribute": {
 			"critical_damage": 10,
 			"max_health": 1000,
@@ -73,16 +65,14 @@
 		},
 		"has": true
 	}, {
-		"name": "Ludini, Patron of Playfulness",
-		"cn":"玩乐象征（方块龙）",
+		"name": "Ludini,PatronofPlayfulness",
 		"attribute": {
 			"jump": 3,
 			"magic_find": 100
 		},
 		"has": true
 	}, {
-		"name": "Dracocolatl, the Mellower",
-		"cn":"成熟之咳咳",
+		"name": "Dracocolatl,theMellower",
 		"attribute": {
 			"health_regeneration_": 5,
 			"max_health": 1000,
@@ -91,7 +81,6 @@
 		"has": true
 	}, {
 		"name": "Drak-O-Lantern",
-		"cn":"南瓜灯龙",
 		"attribute": {
 			"critical_hit": 0.6,
 			"max_health": 1000,
@@ -101,8 +90,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Inora, Flame of Enlightenment",
-		"cn":"启蒙之炎伊诺拉（智慧龙）",
+		"name": "Inora,FlameofEnlightenment",
 		"attribute": {
 			"max_health_": 10,
 			"attack_speed": 3,
@@ -111,8 +99,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Thallasion, Shaper of the Currents",
-		"cn":"趋势操控者沙拉西恩（深海龙）",
+		"name": "Thallasion,ShaperoftheCurrents",
 		"attribute": {
 			"physical_damage": 250,
 			"health_regeneration": 1800,
@@ -120,8 +107,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Tysorion, Steward of New Beginnings",
-		"cn":"伊始管理者泰索里昂（喷泉龙）",
+		"name": "Tysorion,StewardofNewBeginnings",
 		"attribute": {
 			"critical_hit": 0.3,
 			"critical_damage": 3,
@@ -131,8 +117,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Tannenbomber, the Harbinger of Tidings",
-		"cn":"预言先知（圣诞龙）",
+		"name": "Tannenbomber,theHarbingerofTidings",
 		"attribute": {
 			"critical_hit": 0.8,
 			"magic_damage": 500,
@@ -140,8 +125,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Crisopeia, the Crucible of Souls",
-		"cn":"灵魂熔炉（神龙）",
+		"name": "Crisopeia,theCrucibleofSouls",
 		"cn":"",
 		"attribute": {
 			"energy_regeneration_":5,
@@ -150,8 +134,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Baesmuth, the Shaper's Gift",
-		"cn":"艳色守护者（彩虹龙/挖矿龙）",
+		"name": "Baesmuth,theShaper'sGift",
 		"attribute": {
 			"lasermancy":50,
 			"max_health":1000,
@@ -159,8 +142,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Rachnaphon, the Silent Spectator",
-		"cn":"沉默观察者（蜘蛛笼/回旋龙）",
+		"name": "Rachnaphon,theSilentSpectator",
 		"attribute": {
 			"attack_speed":8,
 			"max_health":1000,
@@ -168,8 +150,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Petallura, Nature's Beckoning",
-		"cn":"自然搏动（植物龙）",
+		"name": "Petallura,Nature'sBeckoning",
 		"attribute": {
 			"max_health_":20,
 			"magic_damage":500,
@@ -177,8 +158,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Miraldis, the Primordial Preserver",
-		"cn":"原生维护者（恐龙/维护龙）",
+		"name": "Miraldis,thePrimordialPreserver",
 		"attribute": {
 			"max_health_": 10,
 			"max_health":1000,
@@ -187,8 +167,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Wyntegra, Galenor's Pride",
-		"cn":"加蓝若的骄傲（冰龙）",
+		"name": "Wyntegra,Galenor'sPride",
 		"attribute": {
 			"max_health":1000,
 			"critical_damage":3,
@@ -197,8 +176,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Sarsaponia, the Pristine",
-		"cn":"远古萨拉尼亚",
+		"name": "Sarsaponia,thePristine",
 		"attribute": {
 			"max_health": 1000,
 			"critical_damage": 10,
@@ -206,8 +184,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Almakhestia, Host of Starfire",
-		"cn":"星火的宿主（星火龙）",
+		"name": "Almakhestia,HostofStarfire",
 		"attribute": {
 			"max_health": 1000,
 			"energy_regeneration_": 3,
@@ -216,8 +193,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Aurym, Keeper of Histories",
-		"cn":"历史纪录者",
+		"name": "Aurym,KeeperofHistories",
 		"attribute": {
 			"attack_speed": 7,
 			"max_health": 1000,
@@ -225,8 +201,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Blocktron, the Guardian Beyond the Sky",
-		"cn":"布洛克，天空守护神（工会龙）",
+		"name": "Blocktron,theGuardianBeyondtheSky",
 		"attribute": {
 			"max_health": 1000,
 			"max_health_": 10,
@@ -235,8 +210,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Tanbleddyn of the Western Peaks",
-		"cn":"西部山峰的坦布雷登（狗龙）",
+		"name": "TanbleddynoftheWesternPeaks",
 		"attribute": {
 			"critical_damage":3,
 			"max_health":1000,
@@ -245,8 +219,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Fulguras, the Lightning",
-		"cn":"闪电之刃（闪电龙）",
+		"name": "Fulguras,theLightning",
 		"attribute": {
 			"attack_speed":5,
 			"critical_hit":0.5,
@@ -255,8 +228,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Xendri, the Arc Tempest",
-		"cn":"电弧风暴（工会龙）",
+		"name": "Xendri,theArcTempest",
 		"attribute": {
 			"max_energy": 10,
 			"energy_regeneration_": 3,
@@ -265,8 +237,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Carys, Seraph of the Golden Vale",
-		"cn":"金谷先知卡瑞斯",
+		"name": "Carys,SeraphoftheGoldenVale",
 		"attribute": {
 			"max_health_": 10,
 			"critical_damage": 8,
@@ -275,8 +246,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Norari, the Wayward Spear",
-		"cn":"任性之矛若拉瑞（光矛/白cc）",
+		"name": "Norari,theWaywardSpear",
 		"attribute": {
 			"max_health": 1000,
 			"energy_regeneration_": 5,
@@ -284,8 +254,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Typhandir, the Sundered Shield",
-		"cn":"断裂之盾泰凡迪尔（黑盾）",
+		"name": "Typhandir,theSunderedShield",
 		"attribute": {
 			"max_health_": 10,
 			"attack_speed": 7,
@@ -293,8 +262,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Jhorondir, Arms of the Goddess",
-		"cn":"女神近侍",
+		"name": "Jhorondir,ArmsoftheGoddess",
 		"attribute": {
 			"max_health": 1000,
 			"max_health_": 10,
@@ -304,8 +272,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Phyconidia, Sower of the Sandsea",
-		"cn":"沙海播种者（晶洞）",
+		"name": "Phyconidia,SoweroftheSandsea",
 		"attribute": {
 			"max_health": 1000,
 			"attack_speed": 3,
@@ -315,8 +282,7 @@
 		},
 		"has": true
 	},{
-		"name":"Cy and Sanguine, the Twin Plagues",
-		"cn":"双子瘟疫",
+		"name":"CyandSanguine,theTwinPlagues",
 		"attribute":{
 			"max_health":1000,
 			"jump":2,
@@ -326,7 +292,6 @@
 		"has": true
 	},{
 		"name":"tdsh",
-		"cn":"田地看守",
 		"attribute":{
 			"max_health":1000,
 			"max_energy":8,
@@ -336,8 +301,7 @@
 		"has":true
 	}],
 	"lh": [{
-		"name": "Spirit of Azorian",
-		"cn":"沧蓝",
+		"name": "SpiritofAzorian",
 		"attribute": {
 			"damage": 250,
 			"max_health_": 10,
@@ -346,8 +310,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Elder Dragon",
-		"cn":"永生",
+		"name": "ElderDragon",
 		"attribute": {
 			"max_health": 1000,
 			"max_energy": 1,
@@ -356,8 +319,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Spirit of Lambent",
-		"cn":"霓虹",
+		"name": "SpiritofLambent",
 		"attribute": {
 			"damage": 250,
 			"energy_regeneration_": 5,
@@ -366,8 +328,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Spirit of Trimach",
-		"cn":"远古",
+		"name": "SpiritofTrimach",
 		"attribute": {
 			"max_health": 1000,
 			"max_energy": 5,
@@ -376,8 +337,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Lunar Guidance",
-		"cn":"月翼",
+		"name": "LunarGuidance",
 		"attribute": {
 			"max_health": 1000,
 			"health_regeneration_": 5,
@@ -386,8 +346,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Vile Guidance",
-		"cn":"骸骨",
+		"name": "VileGuidance",
 		"attribute": {
 			"damage": 250,
 			"critical_damage": 10,
@@ -396,8 +355,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Winter Aura",
-		"cn":"冬季",
+		"name": "WinterAura",
 		"attribute": {
 			"damage": 250,
 			"critical_hit": 1,
@@ -406,8 +364,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Starlight Aura",
-		"cn":"星光",
+		"name": "StarlightAura",
 		"attribute": {
 			"max_health": 1000,
 			"magic_damage": 500,
@@ -417,7 +374,6 @@
 		"has": true
 	}, {
 		"name": "sl",
-		"cn":"奢龙",
 		"attribute": {
 			"max_health": 1000,
 			"critical_hit": 0.5,
@@ -430,8 +386,7 @@
 	],
 	"o":[
 	// {
-	// 	"name": "Disaeon the Immortal",
-	// 	"attribute": {
+	// 	"name":"DisaeontheImmortal",
 	// 		"max_health": 1000,
 	// 		"max_energy": 1,
 	// 		"energy_regeneration_": 1,
@@ -440,8 +395,7 @@
 	// 	"has": true
 	// },
 	 {
-		"name": "Indurion, the Unwavering",
-		"cn":"虚空龙",
+		"name": "Indurion,theUnwavering",
 		"attribute": {
 			"critical_damage": 10,
 			"magic_damage": 500,
@@ -449,8 +403,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Olhukoi, the Moonlit Muse",
-		"cn":"月魂龙",
+		"name": "Olhukoi,theMoonlitMuse",
 		"attribute": {
 			"max_health": 1000,
 			"critical_hit": 0.3,
@@ -459,8 +412,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Rhom-10, Dissent’s Roar",
-		"cn":"电阻龙",
+		"name": "Rhom-10,Dissent’sRoar",
 		"attribute": {
 			"attack_speed": 7,
 			"max_health": 1000,
@@ -468,8 +420,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Hoshizora, Luminary of Hope",
-		"cn":"电阻龙",
+		"name": "Hoshizora,LuminaryofHope",
 		"attribute": {
 			"attack_speed": 7,
 			"max_health": 1000,
@@ -477,8 +428,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Yzzuli of the Honeybreeze",
-		"cn":"蜜蜂",
+		"name": "YzzulioftheHoneybreeze",
 		"attribute": {
 			"max_health": 1000,
 			"damage": 250,
@@ -487,8 +437,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Shaoran, Sage of the Eastern Ranges",
-		"cn":"东境贤者 蓝鳞龙",
+		"name": "Shaoran,SageoftheEasternRanges",
 		"attribute": {
 			"max_health_": 20,
 			"magic_damage": 500,
@@ -496,8 +445,7 @@
 		},
 		"has": true
 	}, {
-		"name": "Amatrix, the Hexed",
-		"cn":"战争之王 炸弹二期的龙",
+		"name": "Amatrix,theHexed",
 		"attribute": {
 			"max_health":1000,
 			"max_health_":7,

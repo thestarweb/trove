@@ -8,10 +8,10 @@ return [
 	'check.res'=>'宝石结果',
 	'normal_gem'=>'小宝石',
 	'empowered_gem'=>'大宝石',
-	'FireGem'=>'火焰宝石'
-	'AirGem'=>'天空宝石'
-	'WaterGem'=>'水蓝宝石'
-	'CosmicGem'=>'宇宙宝石'
+	'FireGem'=>'火焰宝石',
+	'AirGem'=>'天空宝石',
+	'WaterGem'=>'水蓝宝石',
+	'CosmicGem'=>'宇宙宝石',
 	'comment'=>[
 		'O'=>'极品宝石，哇NB',
 		'E'=>'还不错呦，留着吧',

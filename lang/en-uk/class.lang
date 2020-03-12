@@ -1,12 +1,12 @@
 <?php
 return [
 	'Gunslinger'=>'Gunslinger',
-	'IceSage'=>'IceSage',
-	'FaeTrickster'=>'FaeTrickster',
+	'IceSage'=>'Ice Sage',
+	'FaeTrickster'=>'Fae Trickster',
 	'Dracolyte'=>'Dracolyte',
-	'NeonNinja'=>'NeonNinja',
+	'NeonNinja'=>'Neon Ninja',
 	'Revenant'=>'Revenant',
 	'Knight'=>'Knight',
 	'Vanguardian'=>'Vanguardian',
-	'ShadowHunter'=>'ShadowHunter'
+	'ShadowHunter'=>'Shadow Hunter'
 ];
