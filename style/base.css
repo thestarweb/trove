@@ -13,9 +13,122 @@ body{
 }
 
 
-main{
+header,main{
 	width: 600px;
 	margin: 0 auto;
+}
+#dh{
+	border: solid 2px #999;
+	border-radius: 5px;
+	background: #024;
+	color: #88f;
+	margin: 20px 5px;
+}
+header,#dh,#dh *{
+	overflow: visible;
+}
+#dh{
+	/*height: 40px;*/
+	text-align: center;
+}
+#dh .dh_item{
+	display: block;
+}
+#dh>.dh_item{
+	height: 100%;
+	display: inline-block;
+}
+#dh .dh_item_name{
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	margin: 2px 0;
+	padding: 0 10px;
+	text-decoration:none;
+}
+#dh .dh_item_children{
+	position: absolute;
+	z-index: 100;
+	border: solid 2px #999;
+	border-radius: 2px;
+	background: #024;
+	color: #88f;
+	display: none;
+	/*width: 100px;*/
+	white-space:nowrap;
+	top: -5px;
+	left: 100%;
+	margin-left: 8px;
+}
+#dh .dh_item_children:before{
+	/*margin-top: 10px;*/
+	top: 0;
+	left: -10px;
+	position:absolute;
+	display: block;
+	width: 10px;
+	height: 100%;
+	content: " ";
+}
+#dh .dh_item_children:after{
+	top: 14px;
+	left: -10px;
+	position:absolute;
+	display: block;
+	content: " ";
+	border-style: solid;
+	border-top-width: 8px;
+	border-top-color: transparent;
+	border-bottom-width: 8px;
+	border-bottom-color: transparent;
+	border-left-width: 0;
+	border-right-width: 10px;
+	border-right-color: #999;
+}
+#dh>.dh_item>.dh_item_children{
+	margin-top: 5px;
+	top: 100%;
+	left: 0;
+	margin-left: 0;
+}
+#dh>.dh_item>.dh_item_children:before{
+	/*margin-top: 10px;*/
+	width:100%;
+	top: -10px;
+	height: 10px;
+	left: 0;
+}
+#dh>.dh_item>.dh_item_children:after{
+	top: -10px;
+	left: 10px;
+	border-top-width: 0px;
+	border-bottom-width: 8px;
+	border-bottom-color: #999;
+	border-left-width: 12px;
+	border-left-color: transparent;
+	border-right-width: 12px;
+	border-right-color: transparent;
+}
+#dh .dh_item:hover>.dh_item_children{
+	display: inline-block;
+}
+#dh .dh_item:hover>.dh_item_name{
+	background: #246;
+}
+#dh>.dh_item:hover>.dh_item_name{
+	background: transparent;
+}
+#dh>.dh_item:hover>.dh_item_name:after{
+	position: relative;
+	bottom: 5px;
+	left: 0;
+	display: block;
+	height: 2px;
+	background-color: #48c;
+	content: " ";
+	/*width: 128%;
+    left: -14%;*/
+    margin: 0 -5px;
 }
 
 .block{

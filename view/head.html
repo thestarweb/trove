@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo $title;?></title>
+	<title><?php echo $title.'-'.$this->lang('title','site_name');?> by star_ss</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->ini_get('styles_url');?>base.css">
 	<script type="text/javascript" src="<?php echo $this->ini_get('my_script_path');?>"></script>
 </head>
 <body>
 <header>
-<?php $this->succ->show_script();?>
+<?php
+	$this->succ->show_script();
+	function show_list($list){
+		foreach ($list as $v) {
+?>
+			<div class="dh_item">
+				<a class="dh_item_name" href="<?php echo $v['src']?>"><?php echo $v['name']?></a>
+<?php if(isset($v['children'])){?>
+					<div class="dh_item_children">
+<?php show_list($v['children']);?>
+					</div>
+<?php } ?>
+			</div>
+<?php
+		}
+?>
+<?php
+	}
+	$list=[
+		[
+			'name'=>$this->lang('title','gem'),
+			'src'=>URLROOT.'gem',
+			'children'=>[
+				[
+					'name'=>$this->lang('title','check_gem'),
+					'src'=>URLROOT.'gem/check'
+				]
+			]
+		],
+		[
+			'name'=>$this->lang('title','counter'),
+			'src'=>URLROOT.'index/coe'
+		]
+	]
+?>
+	<h1><?php echo $this->lang('title','site_name');?></h1>
+	<div id="dh">
+		<!-- <div class="dh_item">
+			<a class="dh_item_name">宝石</a>
+			<div class="dh_item_children">
+				<div class="dh_item">
+					<a class="dh_item_name" href="<?php echo URLROOT;?>gem/check">选择好宝石</a>
+					<div class="dh_item_children">
+						<div class="dh_item">
+							<a class="dh_item_name" href="<?php echo URLROOT;?>gem/check">选择好宝石</a>
+						</div>
+					</div>	
+				</div>
+			</div>	
+		</div>
+		<div class="dh_item">
+			<a class="dh_item_name" href="<?php echo URLROOT;?>index/coe">coe</a>
+		</div> -->
+		<?php show_list($list);?>
+	</div>
 </header>
 <main>

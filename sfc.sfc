@@ -6,8 +6,8 @@ if(!defined('system::VISION')||system::VISION<18){
 }
 //版本及版权信息
 			$this->namespace='star\\web\\trove';
-			define('VERSION','1.1.0.0086');
-			define('MAKE_TIME','2020-03-12');
+			define('VERSION','1.1.0.0090 beta');
+			define('MAKE_TIME','2020-03-13');
 			define('COPY','&copy;2013-2020');
 			$this->cfgs['succ_dir']='../succ/';
 			$this->cfgs['succ_app_id']='1';

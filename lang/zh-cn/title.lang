@@ -1,0 +1,8 @@
+<?php
+return [
+	'site_name'=>'宝藏世界工具',
+	'index'=>'首页',
+	'gem'=>'宝石',
+	'check_gem'=>'检测宝石',
+	'counter'=>'coe计算器'
+];

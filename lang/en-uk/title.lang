@@ -1,0 +1,8 @@
+<?php
+return [
+	'site_name'=>'tools of trove',
+	'index'=>'home',
+	'gem'=>'gem',
+	'check_gem'=>'check gem',
+	'counter'=>'coe counter'
+];
