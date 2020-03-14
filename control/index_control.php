@@ -2,7 +2,9 @@
 namespace star\web\trove; 
 class index_control{
 	public function index_page($system){
-		//
+		$system->show_head($system->lang('title','index'));
+		include $system->get_view('index');
+		$system->show_foot();
 	}
 	public function coe_page($system){
 		$system->show_head($system->lang('title','counter'));

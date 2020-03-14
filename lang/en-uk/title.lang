@@ -4,5 +4,7 @@ return [
 	'index'=>'home',
 	'gem'=>'gem',
 	'check_gem'=>'check gem',
-	'counter'=>'coe counter'
+	'counter'=>'coe counter',
+	'source_code'=>'Source code',
+	'whats_new'=>'What\'s new'
 ];
