@@ -11,6 +11,11 @@ class index_control{
 		include $system->get_view('coe');
 		$system->show_foot();
 	}
+	public function about_page($system){
+		$system->show_head($system->lang('title','about'));
+		include $system->get_view('about');
+		$system->show_foot();
+	}
 	public function lang_page($system,$c='zh-cn'){
 		if(in_array($c,$system->ini_get('lang_list'))){
 			$loads=explode(',','class,base,gem,dragon');

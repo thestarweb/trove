@@ -1,10 +1,11 @@
 <?php
 return [
-	'site_name'=>'tools of trove',
-	'index'=>'home',
-	'gem'=>'gem',
-	'check_gem'=>'check gem',
-	'counter'=>'coe counter',
+	'site_name'=>'Tools of Trove',
+	'index'=>'Home',
+	'gem'=>'Gem',
+	'check_gem'=>'Check Gem',
+	'counter'=>'Coe Counter',
+	'about'=>'About',
 	'source_code'=>'Source code',
 	'whats_new'=>'What\'s new'
 ];

@@ -14,7 +14,12 @@
 		foreach ($list as $v) {
 ?>
 			<div class="dh_item">
-				<a class="dh_item_name" href="<?php echo $v['src']?>"><?php echo $v['name']?></a>
+				<a class="dh_item_name"<?php
+						if(isset($v['src'])){echo ' href="'.$v['src'].'"';}
+						if(isset($v['new_window'])){echo ' target="_blank"';}
+					?>>
+					<?php echo $v['name']?>
+				</a>
 <?php if(isset($v['children'])){?>
 					<div class="dh_item_children">
 <?php show_list($v['children']);?>
@@ -33,7 +38,6 @@
 		],
 		[
 			'name'=>$this->lang('title','gem'),
-			'src'=>URLROOT.'gem',
 			'children'=>[
 				[
 					'name'=>$this->lang('title','check_gem'),
@@ -44,6 +48,22 @@
 		[
 			'name'=>$this->lang('title','counter'),
 			'src'=>URLROOT.'index/coe'
+		],
+		[
+			'name'=>$this->lang('title','about'),
+			'src'=>URLROOT.'index/about',
+			'children'=>[
+				[
+					'name'=>$this->lang('title','source_code'),
+					'src'=>'https://github.com/thestarweb/trove',
+					'new_window'=>true
+				],
+				[
+					'name'=>$this->lang('title','whats_new'),
+					'src'=>'https://github.com/thestarweb/trove/commits/master',
+					'new_window'=>true
+				]
+			]
 		]
 	]
 ?>

@@ -5,6 +5,7 @@ return [
 	'gem'=>'宝石',
 	'check_gem'=>'检测宝石',
 	'counter'=>'coe计算器',
+	'about'=>'关于',
 	'source_code'=>'源代码',
 	'whats_new'=>'更新日志'
 ];
