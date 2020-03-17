@@ -6,9 +6,9 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 		var item=$.set("div",$("#equipment_body"));
 		var option="";
 		for(var j in equipment.type[i]){
-			option+="<option value='"+j+"'>"+j+"</option>"
+			option+="<option value='"+j+"'>"+$.lang("base."+j)+"</option>"
 		}
-		item.innerHTML=myScript.template_get_html("equipment_item",{name:i,typedata:option});
+		item.innerHTML=myScript.template_get_html("equipment_item",{name:$.lang("base."+i),typedata:option});
 
 		item.className="equipment_item";
 
@@ -56,7 +56,7 @@ myScript.fast_ajax(DATA_BASE()+"equipment.json",function(ajax){
 
 				var option="";
 				for(var j in equipment.data[target.value]){
-					option+="<option value='"+j+"'>"+j+"</option>"
+					option+="<option value='"+j+"'>"+$.lang("base."+j)+"</option>"
 				}
 				var equipment_lv=myScript.$get(".equipment_lv",this)[0];
 				equipment_lv.innerHTML=option;

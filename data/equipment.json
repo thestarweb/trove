@@ -1,6 +1,6 @@
 {
 	"type":{
-		"weapons":{
+		"weapon":{
 			"crystal":[
 				{
 					"as":-1,
@@ -28,7 +28,7 @@
 				}
 			]
 		},
-		"helmets":{
+		"hat":{
 			"crystal":[
 				{
 					"as":-1,
@@ -56,7 +56,7 @@
 				}
 			]
 		},
-		"masks":{
+		"face":{
 			"crystal":[
 				{
 					"as":-1,
@@ -103,7 +103,7 @@
 		"crystal":{
 			"lv3_5star":[
 				{"light":650,"magic_damage":10400,"physical_damage":10400},
-				{"max_health":23400,"light":1100},
+				{"max_health":23400,"light":1300},
 				{"critical_damage":42.9,"energy_regeneration":200,"attack_speed":33,"move_speed":20},//回能数据待定
 				{"critical_hit":5.5,"jump":22,"magic_find":195,"magic_damage":3432,"physical_damage":3432}
 			]
