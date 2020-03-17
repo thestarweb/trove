@@ -258,12 +258,12 @@
 		</template>
 		<template name="club_item">
 				<div>
-					{name}
+					<span>{name}</span>
 					<select class="club_select">
-						<option value="-1">无</option>
-						<option value="0">1级</option>
-						<option value="1">2级</option>
-						<option value="2" selected>3级</option>
+						<option value="-1"><?php echo $system->lang('base','none');?></option>
+						<option value="0"><?php echo $system->lang('club','Fixture.tier1');?></option>
+						<option value="1"><?php echo $system->lang('club','Fixture.tier2');?></option>
+						<option value="2"><?php echo $system->lang('club','Fixture.tier3');?></option>
 					</select>
 				</div>
 		</template>

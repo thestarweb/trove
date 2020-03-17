@@ -1,0 +1,30 @@
+<?php
+return [
+	'Fixture'=>[
+		'tier1'=>'Tier I',
+		'tier2'=>'Tier II',
+		'tier3'=>'Tier II',
+		'Base'=>'Base',
+		'TrovianClubitUnion'=>'Trovian Clubit Union',
+		'RallyOfHeroes'=>'Rally of Heroes',
+		'Combat'=>'Combat',
+		'ShrineOfSkill'=>'Shrine of Skill',
+		'ShrineOfFerocity'=>'Shrine of Ferocity',
+		'ShrineOfVitality'=>'Shrine of Vitality',
+		'ShrineOfRejuvenation'=>'Shrine of Rejuvenation',
+		'ShrineOfResilience'=>'Shrine of Resilience',
+		'ShrineOfEfficiency'=>'Shrine of Efficiency',
+		'Utility'=>'Utility',
+		'TravellingClubMerchant'=>'Travelling Club Merchant',
+		'MountMenagerie'=>'Mount Menagerie',
+		'HoardOfProsperity'=>'Hoard of Prosperity',
+		'FontOfKnowledge'=>'Font of Knowledge',
+		'ReposeOfHeroes'=>'Repose of Heroes',
+		'ScenicBelltower'=>'Scenic Belltower',
+		'Ultimate'=>'Ultimate',
+		'EffigyOfFlowingElixirs'=>'Effigy of Flowing Elixirs',
+		'EffigyOfPotentOpulence'=>'Effigy of Potent Opulence',
+		'EffigyOfEchoingStrikes'=>'Effigy of Echoing Strikes',
+		'EffigyOfFrugality'=>'Effigy of Frugality'
+	]
+];

@@ -151,6 +151,20 @@
 	width: 150px;
 }
 
+/*工会*/
+#club #club_body{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+#club #club_body .club_item{
+	display: table-row;
+}
+#club #club_body .club_item div{
+	display: table-cell;
+	text-align: right;
+}
+
 /*结果*/
 #res div{
 	overflow: hidden;

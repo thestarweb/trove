@@ -1,0 +1,30 @@
+<?php
+return [
+	'Fixture'=>[
+		'tier1'=>'1级',
+		'tier2'=>'2级',
+		'tier3'=>'3级',
+		'Base'=>'基础装置',
+		'TrovianClubitUnion'=>'英雄的集结',
+		'RallyOfHeroes'=>'寻宝者工会币仓库',
+		'Combat'=>'战斗装置',
+		'ShrineOfSkill'=>'技巧神龛',
+		'ShrineOfFerocity'=>'凶悍神龛',
+		'ShrineOfVitality'=>'活力神龛',
+		'ShrineOfRejuvenation'=>'恢复神龛',
+		'ShrineOfResilience'=>'耐力神龛',
+		'ShrineOfEfficiency'=>'效率神龛',
+		'Utility'=>'通用装置',
+		'TravellingClubMerchant'=>'旅行工会商人',
+		'MountMenagerie'=>'兽群山',
+		'HoardOfProsperity'=>'繁荣囤积物',
+		'FontOfKnowledge'=>'知识之泉',
+		'ReposeOfHeroes'=>'英雄的长眠',
+		'ScenicBelltower'=>'景钟塔楼',
+		'Ultimate'=>'终极装置',
+		'EffigyOfFlowingElixirs'=>'流动灵药雕像',
+		'EffigyOfPotentOpulence'=>'富裕雕像',
+		'EffigyOfEchoingStrikes'=>'攻击回响雕像',
+		'EffigyOfFrugality'=>'节俭雕像'
+	]
+];
