@@ -17,7 +17,7 @@ return [
 		'E'=>'This gem is good, use it will',
 		'A'=>'It just OK, but it\'s also usefull',
 		'P'=>'Normal gem, maybe you can get a better one',
-		'D'=>'Jast a bad gem, please try to get a better one',
+		'D'=>'Just a bad gem, please try to get a better one',
 		'T'=>'What a terrible gem! Will you keep it?'
 	]
 ];
