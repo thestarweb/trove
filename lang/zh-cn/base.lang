@@ -2,6 +2,7 @@
 return [
 	'basevalue'=>'基础数据',
 	'class'=>'职业',
+	'subclass'=>'副职业',
 	'gem'=>'宝石',
 	'club'=>'工会',
 	'dragon'=>'龙',
@@ -9,7 +10,6 @@ return [
 	'mastery'=>'专精',
 	'allies'=>'宠物',
 	'food'=>'食物',
-	'subclass'=>'副职业',
 	'none'=>'无',
 	'GemJump'=>'宝石跳跃',
 	'OriginalResult'=>'原始结果',

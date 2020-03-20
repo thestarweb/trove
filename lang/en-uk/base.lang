@@ -2,6 +2,7 @@
 return [
 	'basevalue'=>'Base Value',
 	'class'=>'Class',
+	'subclass'=>'Subclass',
 	'gem'=>'Gem',
 	'club'=>'Club',
 	'dragon'=>'Dragon',
@@ -9,7 +10,6 @@ return [
 	'mastery'=>'Mastery',
 	'allies'=>'Allies',
 	'food'=>'Food',
-	'subclass'=>'Sub Class',
 	'none'=>'none',
 	'GemJump'=>'Gem Jump',
 	'OriginalResult'=>'Original Result',

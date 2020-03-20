@@ -8,5 +8,12 @@ return [
 	'Revenant'=>'无头',
 	'Knight'=>'骑士',
 	'Vanguardian'=>'先锋',
-	'ShadowHunter'=>'暗猎'
+	'ShadowHunter'=>'暗猎',
+	'DinoTamer'=>'训龙',
+	'Chloromancer'=>'碧叶',
+	'LunarLancer'=>'银月枪兵',
+	'TombRaiser'=>'火龙法师',
+	'Boomeranger'=>'游侠',
+	'PirateCaptain'=>'海盗',
+	'CandyBarbarian'=>'糖战（野蛮糖果人）'
 ];

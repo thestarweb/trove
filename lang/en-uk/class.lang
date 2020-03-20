@@ -8,5 +8,12 @@ return [
 	'Revenant'=>'Revenant',
 	'Knight'=>'Knight',
 	'Vanguardian'=>'Vanguardian',
-	'ShadowHunter'=>'Shadow Hunter'
+	'ShadowHunter'=>'Shadow Hunter',
+	'DinoTamer'=>'Dino Tamer',
+	'Chloromancer'=>'Chloromancer',
+	'LunarLancer'=>'Lunar Lancer',
+	'TombRaiser'=>'Tomb Raiser',
+	'Boomeranger'=>'Boomeranger',
+	'PirateCaptain'=>'Pirate Captain',
+	'CandyBarbarian'=>'Candy Barbarian'
 ];
