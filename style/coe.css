@@ -1,4 +1,6 @@
-
+div{
+	transition:height 0.2s,max-height 500s;
+}
 
 
 /*隐藏显示用按钮*/

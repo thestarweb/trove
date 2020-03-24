@@ -72,13 +72,13 @@
 	<div id="main">
 		<div id="basevalue" class="type_root block">
 			<div><?php echo $system->lang("base","basevalue");?><div class="checkbutton"><div class="show"></div></div></div>
-			<div id="basevalue_show" style="display: none;">
+			<div id="basevalue_show">
 			</div>
 		</div>
 		<div id="class" class="type_root">
 			<div class="block">
 				<div><?php echo $system->lang("base","class");?> : <select id="select_class"></select><div class="checkbutton"><div class="show"></div></div></div>
-				<div style="display: none;">
+				<div>
 					<div id="class_lv_header"></div>
 					<div id="class_lv_body"></div>
 					<div id="class_lv_footer"></div>
@@ -101,10 +101,10 @@
 				</span>
 				<div class="checkbutton" cid="gem_body"><div class="show"></div></div>
 			</div>
-			<div id="gem_body" style="display: none;">
+			<div id="gem_body">
 				<div class="block">
 					<div>配比测试单元(暂未完成)<div class="checkbutton"><div class="show"></div></div></div>
-					<div style="display: none;">
+					<div>
 						<div>
 							主属性
 							<select id="gem_paibi_main" class="gem_attribute_select" selectedOptions="damage"></select>
@@ -119,7 +119,7 @@
 		</div>
 		<div id="dragon" class="type_root block">
 			<div><?php echo $system->lang("base","dragon");?><div class="checkbutton"><div class="show"></div></div></div>
-			<div id="dragon_data" style="display: none;"></div>
+			<div id="dragon_data"></div>
 			<div id="dragon_res"></div>
 		</div>
 		<div id="mastery" class="type_root block">
@@ -137,7 +137,7 @@
 		</div>
 		<div id="equipment" class="type_root block">
 			<div><?php echo $system->lang("base","equipment");?><div class="checkbutton"><div class="show"></div></div></div>
-			<div id="equipment_data" style="display: none;">
+			<div id="equipment_data">
 				<div id="equipment_body"></div>
 				<div id="equipment_res"></div>
 			</div>
@@ -148,7 +148,7 @@
 		</div>
 		<div id="club" class="type_root block">
 			<div><?php echo $system->lang("base","club");?><div class="checkbutton"><div class="show"></div></div></div>
-			<div style="display: none;">
+			<div>
 				<div id="club_body"></div>
 				<div id="club_res"></div>
 			</div>
@@ -167,7 +167,7 @@
 		<div id="res" class="block">
 			<div class="block">
 				<div><?php echo $system->lang('base','OriginalResult');?><div class="checkbutton"><div class="show"></div></div></div>
-				<div id="res_o" style="display: none;"></div>
+				<div id="res_o"></div>
 			</div>
 			<div class="block">
 				<div><?php echo $system->lang('base','GameResult');?><div class="checkbutton"><div class="hidden"></div></div></div>
@@ -200,7 +200,7 @@
 					<?php echo $system->lang('base','primordial_dragon')?> <input class="has_dragon" type="checkbox" {dragon}/>
 					<div class="checkbutton"><div class="show"></div></div>
 				</div>
-				<div style="display: none;">
+				<div>
 					<div class="gem_type">
 						<div class="name"><?php echo $system->lang("gem","empowered_gem");?></div>@__gem__#type=empowered#cosmic_gem={cosmic_gem}
 					</div>
@@ -255,12 +255,12 @@
 			</div>
 		</template>
 		<template name="attribute_item">
-			<div class="attribute_item"><span class="attribute_name">{name}</span><span class="attribute_value">{value}</span></div>
+			<div class="attribute_item"><span class="attribute_name">{name}</span> <span class="attribute_value">{value}</span></div>
 		</template>
 		<template name="dragon_type">
 			<div class="block">
 				<div>{name}<span class="number">0/0</span><div class="checkbutton"><div class="show"></div></div></div>
-				<div class="dragon_data" style="display: none;"></div>
+				<div class="dragon_data"></div>
 			</div>
 		</template>
 		<template name="club_item">
@@ -300,29 +300,6 @@
 			critical_hit:2,
 			critical_damage:2
 		}
-		// var attributes={
-		// 	physical_damage:{fixed:0,gem:true},
-		// 	physical_damage_:{fixed:0},
-		// 	magic_damage:{fixed:0,gem:true},
-		// 	magic_damage_:{fixed:0},
-		// 	damage:{},
-		// 	damage_:{fixed:1},
-		// 	critical_damage:{fixed:2,gem:true},
-		// 	critical_hit:{fixed:2,gem:true},
-		// 	max_health:{fixed:0,gem:true},
-		// 	max_health_:{fixed:0,gem:true},
-		// 	health_regeneration:{},
-		// 	health_regeneration_:{},
-		// 	max_energy:{},
-		// 	energy_regeneration:{},
-		// 	energy_regeneration_:{},
-		// 	lasermancy:{},
-		// 	jump:{},
-		// 	light:{fixed:0,gem:false,cosmic_gem:true},
-		// 	magic_find:{fixed:0,gem:false},
-		// 	attack_speed:{},
-		// 	move_speed:{}
-		// };
 	$(function(){
 		//模板初始化
 		myScript.template_init();
@@ -342,6 +319,18 @@
 	</script>
 	<script type="text/javascript" src="<?php echo URLROOT;?>script/calculator/res.js"></script>
 	<script type="text/javascript">
+	(function(){
+		var setv=function(b){
+			var dom=(b.getAttribute("cid")?$("#"+b.getAttribute("cid")):b.parentElement.nextElementSibling)
+			if(b.firstElementChild.className=="show"){
+				dom.style.maxHeight="0";
+				dom.style.height=dom.offsetHeight+"px";
+				setTimeout(()=>dom.style.height="0",1);
+			}else{
+				dom.style.height="";
+				dom.style.maxHeight="5000px";
+			}
+		}
 		document.addEventListener("click",function(ev){//折叠/展开按钮的事件代理，由于不是在模块内部，使用addEventListener防止和其他模块冲突
 			var b;
 			//判断事件是否在按钮上并获取按钮节点
@@ -350,11 +339,25 @@
 			if(b){//说明找到并成功获取了按钮节点
 				if(b.firstElementChild.className=="show"){
 					b.firstElementChild.className="hidden";
-					(b.getAttribute("cid")?$("#"+b.getAttribute("cid")):b.parentElement.nextElementSibling).style.display="";
 				}else{
 					b.firstElementChild.className="show";
-					(b.getAttribute("cid")?$("#"+b.getAttribute("cid")):b.parentElement.nextElementSibling).style.display="none";
 				}
+				setv(b);
 			}
 		});
+		var list=$(".checkbutton");
+		for(var i=0;i<list.length;i++){
+			setv(list[i]);
+		}
+		var ob=new MutationObserver(function(ev){
+			// console.log(ev);
+			// if(ev.type=="childList"){
+			// 	console.log(1111);
+			// }
+			for(var i=0;i<list.length;i++){
+				setv(list[i]);
+			}
+		});
+		ob.observe($('#main'),{childList:true,subtree:true})
+	})();
 	</script>
