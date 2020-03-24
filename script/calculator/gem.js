@@ -1,90 +1,7 @@
 //宝石模块
-(function(){
-	var gem_data=[
-		{
-			name:"FireGem",
-			dragon:true//龙
-		},
-		{
-			name:"AirGem",
-			dragon:true
-		},
-		{
-			name:"WaterGem",
-			dragon:true
-		},
-		{
-			name:"CosmicGem",
-			cosmic_gem:true,
-			dragon:false
-		},
-	];
-	var gem_attribute={
-		//大宝石
-		empowered:{
-			//物理
-			physical_damage:{
-				base:6314,
-				jump:3724
-			},
-			//魔法
-			magic_damage:{
-				base:6314,
-				jump:3724
-			},
-			//爆伤
-			critical_damage:{
-				base:90.2,
-				jump:53.2
-			},
-			critical_hit:{
-				base:9,
-				jump:5.3
-			},
-			light:{
-				base:451,
-				jump:266
-			},
-			max_health:{
-				base:22550,
-				jump:13300
-			},
-			max_health_:{
-				base:226,
-				jump:133
-			}
-		},
-		normal:{
-			physical_damage:{
-				base:5390,
-				jump:2800
-			},
-			magic_damage:{
-				base:5390,
-				jump:2800
-			},
-			critical_damage:{
-				base:77,
-				jump:40
-			},
-			critical_hit:{
-				base:7.7,
-				jump:4
-			},
-			light:{
-				base:385,
-				jump:200
-			},
-			max_health:{
-				base:16000,
-				jump:10000
-			},
-			max_health_:{
-				base:160,
-				jump:100
-			}
-		}
-	}
+myScript.fast_ajax(DATA_BASE()+"gem.json",function(ajax){
+	var gem_data=ajax.json.gem_type;
+	var gem_attribute=ajax.json.attribute_data;
 
 	//创建模板
 	for(var i=0;i<gem_data.length;i++){
@@ -97,18 +14,19 @@
 	//创建select
 	var list=$(".gem_attribute_select");
 	var option_str="";
-	var yz_option_str=""
-	for(var j in attributes){//创建列表
-		if(attributes[j].gem){
-			option_str+="<option value='"+j+"'>"+$.lang("base."+j)+"</option>";
-		}else if(attributes[j].cosmic_gem){
-			yz_option_str+="<option value='"+j+"'>"+$.lang("base."+j)+"</option>";
-		}
+	for(var j in ajax.json.attribute_type){//创建列表
+		var name=ajax.json.attribute_type[j];
+		option_str+="<option value='"+name+"'>"+$.lang("base."+name)+"</option>";
+	}
+	var cosmic_option_str="";
+	for(var j in ajax.json.cosmic_attribute_type){//创建列表
+		var name=ajax.json.cosmic_attribute_type[j];
+		cosmic_option_str+="<option value='"+name+"'>"+$.lang("base."+name)+"</option>";
 	}
 	for(var i=0;i<list.length;i++){//将列表插入到选项框
 		
 		if(list[i].getAttribute("cosmic_gem")=="true"){
-			list[i].innerHTML+=yz_option_str;
+			list[i].innerHTML+=cosmic_option_str;
 			list[i].setAttribute("selectedOptions","light")
 		}else{
 			list[i].innerHTML=option_str;
@@ -184,8 +102,10 @@
 					for(var j=0;j<sx_type.length;j++){
 						if(a[sx_type[j].value])
 						{
-							data_cache[sx_type[j].value]=a[sx_type[j].value].base+a[sx_type[j].value].jump*(jumpres[j]||0);
-							res_show[j].innerHTML=a[sx_type[j].value].base+a[sx_type[j].value].jump*(jumpres[j]||0);
+							//计算属性值
+							var res=a[sx_type[j].value].base+a[sx_type[j].value].jump*(jumpres[j]||0);
+							data_cache[sx_type[j].value]=res;
+							res_show[j].innerHTML=res.toFixed(fixed[sx_type[j].value]||0);
 							//存储跳法
 							if(sx_type[j].value==$("#gem_paibi_main").value){
 								jump_cache[0]=jumpres[j]||0;
@@ -428,4 +348,4 @@
 	}
 	gem_top.run();
 	
-})();
+});

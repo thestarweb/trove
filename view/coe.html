@@ -42,10 +42,10 @@
 				display_attributes:function(attribute,div){
 					var str="";
 					for(var i in attribute){
-						if(attributes[i]){
+						// if(attributes[i]){
 							//str+="<div class='attribute_item'><span class='attribute_name'>"+attributes[i].name+"</span><span class='attribute_value'>"+attribute[i].toFixed(attributes[i].fixed)+"</span></div>";
-							str+=myScript.template_get_html("attribute_item",{name:$.lang("base."+i),value:attribute[i].toFixed(attributes[i].fixed)});
-						}
+							str+=myScript.template_get_html("attribute_item",{name:$.lang("base."+i),value:attribute[i].toFixed(fixed[i]||0)});
+						// }
 					}
 					div.innerHTML=str;
 				},
@@ -296,33 +296,37 @@
 		</template>
 	</templates>
 	<script type="text/javascript">
-
-		var attributes={
-			physical_damage:{fixed:0,gem:true},
-			physical_damage_:{fixed:0},
-			magic_damage:{fixed:0,gem:true},
-			magic_damage_:{fixed:0},
-			damage:{},
-			damage_:{fixed:1},
-			critical_damage:{fixed:2,gem:true},
-			critical_hit:{fixed:2,gem:true},
-			max_health:{fixed:0,gem:true},
-			max_health_:{fixed:0,gem:true},
-			health_regeneration:{},
-			health_regeneration_:{},
-			max_energy:{},
-			energy_regeneration:{},
-			energy_regeneration_:{},
-			lasermancy:{},
-			jump:{},
-			light:{fixed:0,gem:false,cosmic_gem:true},
-			magic_find:{fixed:0,gem:false},
-			attack_speed:{},
-			move_speed:{}
-		};
+		var fixed={
+			critical_hit:2,
+			critical_damage:2
+		}
+		// var attributes={
+		// 	physical_damage:{fixed:0,gem:true},
+		// 	physical_damage_:{fixed:0},
+		// 	magic_damage:{fixed:0,gem:true},
+		// 	magic_damage_:{fixed:0},
+		// 	damage:{},
+		// 	damage_:{fixed:1},
+		// 	critical_damage:{fixed:2,gem:true},
+		// 	critical_hit:{fixed:2,gem:true},
+		// 	max_health:{fixed:0,gem:true},
+		// 	max_health_:{fixed:0,gem:true},
+		// 	health_regeneration:{},
+		// 	health_regeneration_:{},
+		// 	max_energy:{},
+		// 	energy_regeneration:{},
+		// 	energy_regeneration_:{},
+		// 	lasermancy:{},
+		// 	jump:{},
+		// 	light:{fixed:0,gem:false,cosmic_gem:true},
+		// 	magic_find:{fixed:0,gem:false},
+		// 	attack_speed:{},
+		// 	move_speed:{}
+		// };
 	$(function(){
 		//模板初始化
 		myScript.template_init();
+		//加载模块脚本
 		var types=$(".type_root");
 		for(var i=0;i<types.length;i++){
 			var s=$.set("script",$("body")[0]);
