@@ -321,12 +321,15 @@
 	<script type="text/javascript">
 	(function(){
 		var setv=function(b){
-			var dom=(b.getAttribute("cid")?$("#"+b.getAttribute("cid")):b.parentElement.nextElementSibling)
+
+			var dom=(b.getAttribute("cid")?$("#"+b.getAttribute("cid")):b.parentElement.nextElementSibling);
 			if(b.firstElementChild.className=="show"){
+				dom.setAttribute("transition","to-hide");
 				dom.style.maxHeight="0";
 				dom.style.height=dom.offsetHeight+"px";
-				setTimeout(()=>dom.style.height="0",1);
+				setTimeout(function(){dom.style.height="0"},1);
 			}else{
+				dom.setAttribute("transition","to-show");
 				dom.style.height="";
 				dom.style.maxHeight="5000px";
 			}

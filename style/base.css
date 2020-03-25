@@ -46,6 +46,7 @@ header,#dh,#dh *{
 	margin: 2px 0;
 	padding: 0 10px;
 	text-decoration:none;
+	transition:background 0.5s;
 }
 #dh .dh_item_children{
 	position: absolute;

@@ -1,5 +1,8 @@
-div{
-	transition:height 0.2s,max-height 500s;
+div[transition=to-show]{
+	transition:max-height 4s;
+}
+div[transition=to-hide]{
+	transition:height 0.5s,max-height 1s ease-out;
 }
 
 
