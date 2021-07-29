@@ -1,38 +1,37 @@
 <template>
-	<div id="app" @dragleave="handleCancelEven" @dragover="handleCancelEven" @drop="handleFileDrop">
+	<div class="app-main" @dragleave="handleCancelEven" @dragover="handleCancelEven" @drop="handleFileDrop">
 		<div id="head">
 			trove语言文件编辑器
 
 			<span>
 				新文件处理方式:
-				<select v-model="open_mode">
-					<option value="clean">清空原有</option>
-					<option value="override">覆盖内容</option>
-					<option value="check">比较模式</option>
-					<option value="new(old)">新文件(老文件)</option>
-					<option value="old(new)">老文件(新文件)</option>
-				</select>
+				<su-select v-model="open_mode" :options="[
+					{label:'清空原有',value:'clean'},
+					{label:'覆盖内容',value:'override'},
+					{label:'比较模式',value:'check'},
+					{label:'新文件(老文件)',value:'new(old)'},
+					{label:'老文件(新文件)',value:'old(new)'},
+				]" style="width: 200px;"></su-select>
 				<input type="file" ref="readfile" style="display: none;" accept=".binfab" @change="handleFileChange" multiple />
-				<button @click="handleImport">读取</button>
-
-				<select v-model="export_mode">
-					<option value="all">全部</option>
-					<option v-for="file in file_list" :key="file" :value="file">{{file}}</option>
-				</select>
+				<su-button @click="handleImport">读取</su-button>
+				<su-select v-model="export_mode" :options="[
+					{label:'全部',value:'all'},
+					...file_list
+				]" style="width: 200px;"></su-select>
 				<a ref="download"></a>
-				<button @click="handleExport">导出</button>
+				<su-button @click="handleExport">导出</su-button>
 			</span>
 			<div>
-				搜索<input type="text" v-model="search.value" />
+				搜索<su-input v-model="search.value"></su-input>
 				<span v-if="open_mode=='check'">
 					类型:
-					<select v-model="search.changetype">
-						<option value="-1">全部</option>
-						<option value="0">仅旧文件存在</option>
-						<option value="1">相同内容</option>
-						<option value="2">内容被被修改</option>
-						<option value="3">仅新文件存在</option>
-					</select>
+					<su-select v-model="search.changetype" :options="[
+						{label:'全部',value:-1},
+						{label:'仅旧文件存在',value:0},
+						{label:'相同内容',value:1},
+						{label:'内容被被修改',value:2},
+						{label:'仅新文件存在',value:3},
+					]" style="width: 200px;"></su-select>
 				</span>
 			</div>
 		</div>
@@ -56,7 +55,7 @@
 					<button @click="page++">&gt;</button></span>
 				<span style="float: right;">文件打开数量{{opened_file}}/{{total_file}}</span>
 			</div>
-			<div>by star_ss v1.5.3.0155 2021-03-28（web 2.0 by vue3）</div>
+			<div>by star_ss v1.6.0.0162 2021-07-20（web 2.0 by vue3&star-ui）</div>
 		</div>
 	</div>
 </template>
@@ -105,9 +104,10 @@ export default class Home extends Vue {
 	private get file_list(){
 		var list=[];
 		for(var i=0;i<this.list.length;i++){
-			if(list.indexOf(this.list[i].file)==-1){
-				list.push(this.list[i].file);
-			}
+			// if(list.indexOf(this.list[i].file)==-1){
+			// 	list.push(this.list[i].file);
+			// }
+			list.push({label:this.list[i].file,value:this.list[i].file});
 		}
 		return list;
 	}
@@ -244,10 +244,8 @@ export default class Home extends Vue {
 	span.file{
 		float: right;
 	}
-	#app{
+	.app-main{
 		height: 100%;
-	}
-	#app{
 		display: flex;
 		flex-direction: column;
 	}
