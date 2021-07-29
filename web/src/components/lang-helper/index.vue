@@ -17,7 +17,7 @@
 				<su-select v-model="export_mode" :options="[
 					{label:'全部',value:'all'},
 					...file_list
-				]" style="width: 200px;"></su-select>
+				]"></su-select>
 				<a ref="download"></a>
 				<su-button @click="handleExport">导出</su-button>
 			</span>
@@ -55,7 +55,7 @@
 					<button @click="page++">&gt;</button></span>
 				<span style="float: right;">文件打开数量{{opened_file}}/{{total_file}}</span>
 			</div>
-			<div>by star_ss v1.6.0.0162 2021-07-20（web 2.0 by vue3&star-ui）</div>
+			<div>by star_ss v1.6.0.0162 2021-07-29（web 2.0 by vue3&star-ui）</div>
 		</div>
 	</div>
 </template>

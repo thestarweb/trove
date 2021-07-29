@@ -8,6 +8,11 @@ const routes: Array<RouteRecordRaw> = [
     component: Home
   },
   {
+    path: '/gem/check',
+    name: 'Gem-Check',
+    component:() => import('../views/gem/check.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
