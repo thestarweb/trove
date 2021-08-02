@@ -1,14 +1,20 @@
 <template>
-	<div>
-		{{$t("gem.type.name")}}
-		<su-select v-model="gemType" :options="[
-			{label:$t('gem.type.normal'),value:'normal'},
-			{label:$t('gem.type.empowered'),value:'empowered'}
-		]"></su-select>
-		{{$t("gem.gem-lv")}}
-		<su-select v-model="gemLv" :options="gemLvList"></su-select>
-		{{$t("gem.gem-rank")}}
-		<su-input v-model.number="gemRank"/>
+	<div class="input">
+		<div>
+			{{$t("gem.type.name")}}
+			<su-select v-model="gemType" :options="[
+				{label:$t('gem.type.normal'),value:'normal'},
+				{label:$t('gem.type.empowered'),value:'empowered'}
+			]"></su-select>
+		</div>
+		<div>
+			{{$t("gem.gem-lv")}}
+			<su-select v-model="gemLv" :options="gemLvList"></su-select>
+		</div>
+		<div>
+			{{$t("gem.gem-rank")}}
+			<su-input v-model.number="gemRank"/>
+		</div>
 	</div>
 	<div id="out" :res="gemGrade">
 		<h2 id="res_dj">{{gemGrade}}</h2>
@@ -44,18 +50,18 @@ export default class Page extends Vue {
 	}
 	private gemType="normal";
 	private gemLv=15;
-	private gemRank=1250;
-	private get_pr(lv):number{
+	private gemRank:number|string=1250;
+	private get_pr(lv:number):number{
 		if(lv==20||lv==25) return 75;
 		return 30;
 	}
 	public get gemLvTank():number[]{
-		let temp=[];
-		temp[this.gemLv]=parseInt(this.gemRank);
-		for(let i=parseInt(this.gemLv)-1;i>=15;i--){
+		let temp:number[]=[];console.log(this.gemRank);
+		temp[this.gemLv]=parseInt(this.gemRank as string);
+		for(let i=this.gemLv-1;i>=15;i--){
 			temp[i]=temp[i+1]-this.get_pr(i+1);
 		}
-		for(let i=parseInt(this.gemLv)+1;i<=25;i++){
+		for(let i=this.gemLv+1;i<=25;i++){
 			temp[i]=temp[i-1]+this.get_pr(i);
 		}
 		return temp;
@@ -85,6 +91,11 @@ export default class Page extends Vue {
 <style scoped>
 *{
 	text-align: center;
+}
+.input{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 #out{
 	transition:background 0.5s;
