@@ -21,7 +21,7 @@ import PageMenuItem from "@/components/page-menu-item/index.vue"
 export default class Home extends Vue {
 	private list=[
 		{name:"检查宝石",page:"/gem/check",icon:"/images/gem.png"},
-		{name:"语言文件工具",page:"/lang-helper",icon:""},
+		{name:"语言文件工具",page:"/lang/editer",icon:"/images/lang.svg"},
 	];
 }
 </script>

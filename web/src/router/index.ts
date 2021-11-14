@@ -12,6 +12,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Gem-Check',
     component:() => import('../views/gem/check.vue')
   },
+  // {
+  //   path: '/mod/edit',
+  //   name: 'mod-edit',
+  //   component:() => import('../views/mod/edit.vue')
+  // },
   {
     path: '/about',
     name: 'About',
@@ -21,10 +26,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/lang-helper',
-    name: '语言文件',
+    path: '/lang/editer',
+    name: 'Lang-Editer',
     component:() => import('../views/lang-helper/index.vue')
   },
+  { path: '/lang-helper', redirect: '/lang/editer' }
 ]
 
 const router = createRouter({
