@@ -16,6 +16,10 @@
 					title: $t('lang.child-page.editer.title'),
 					path: '/lang/editer',
 				},
+				{
+					title: $t('mastery.title'),
+					path: '/mastery',
+				},
 			]"
 		>
 			<template v-slot:header>
@@ -42,5 +46,9 @@
 	:root{
 		--star-ui-backgorund-color:#404;
 		--star-ui-font-color: #CCC;
+	}
+	/* 先这样临时解决下 */
+	.su-page--main{
+		flex: 1;
 	}
 </style>

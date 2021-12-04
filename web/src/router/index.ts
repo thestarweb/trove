@@ -4,12 +4,12 @@ import Home from '../views/Home.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
     path: '/gem/check',
-    name: 'Gem-Check',
+    name: 'gem-check',
     component:() => import('../views/gem/check.vue')
   },
   // {
@@ -19,18 +19,22 @@ const routes: Array<RouteRecordRaw> = [
   // },
   {
     path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    name: 'about',
+    component: () => import('../views/About.vue')
   },
   {
     path: '/lang/editer',
-    name: 'Lang-Editer',
+    name: 'lang-editer',
     component:() => import('../views/lang-helper/index.vue')
   },
-  { path: '/lang-helper', redirect: '/lang/editer' }
+  { path: '/lang-helper', redirect: '/lang/editer' },
+  { path: '/mastery', redirect: '/mastery/trove' },
+  {
+    path: '/mastery/:type',
+    name: 'mastery',
+    component:() => import('../views/mastery/index.vue'),
+    props: true,
+  },
 ]
 
 const router = createRouter({

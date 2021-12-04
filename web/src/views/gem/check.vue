@@ -35,12 +35,17 @@
 </template>
 
 <script lang="ts">
+import { SuViewCtrlInjectIsMobile } from '@thestarweb/ui';
 import { Options, Vue } from 'vue-class-component';
 
 
 @Options({
 })
 export default class Page extends Vue {
+	@SuViewCtrlInjectIsMobile readonly isMoblie!: any;
+	mounted(){
+		console.log(this.isMoblie);
+	}
 	private get gemLvList(){
 		let list=[];
 		for (let i = 15; i <= 25; ++i) {

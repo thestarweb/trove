@@ -74,7 +74,7 @@ import {binfabRead,binfabWrite} from "./binfab-helper";
 	},
 })
 export default class Home extends Vue {
-	public $refs!: {
+	declare public $refs: {
 		readfile:HTMLInputElement,
 		download:HTMLAnchorElement
 	}

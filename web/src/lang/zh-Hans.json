@@ -28,5 +28,19 @@
 				"title":"语言文件编辑器"
 			}
 		}
+	},
+	"mastery":{
+		"title": "专精",
+		"type":{
+			"total":"总专精阶级",
+			"trove":"宝藏专精",
+			"geode":"晶洞专精"
+		},
+		"point":"总专精点数",
+		"point-to-lvup":"升级所需点数",
+		"lv-point":"专辑点",
+		"lv":"专辑阶级"
+	},
+	"common":{
 	}
 }
