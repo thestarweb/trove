@@ -35,6 +35,7 @@
 	html,body{
 		margin: 0;
 		padding: 0;
+		color: #CCC;
 	}
 	html,body,#app{
 		height: 100%;
@@ -46,9 +47,5 @@
 	:root{
 		--star-ui-backgorund-color:#404;
 		--star-ui-font-color: #CCC;
-	}
-	/* 先这样临时解决下 */
-	.su-page--main{
-		flex: 1;
 	}
 </style>

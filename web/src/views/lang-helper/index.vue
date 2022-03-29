@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import Ui from "@/components/lang-helper/index.vue"
+import Ui from "@/components/lang-editor/index.vue"
 
 
 @Options({
