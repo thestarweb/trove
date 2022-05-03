@@ -42,7 +42,7 @@ export default class extends Vue {
             },
         });
     }
-    troveMasteryPoint=123456;
+    troveMasteryPoint=147450;
     geodeMasteryPoint=13591;
     get sigils():string[]{
         const list:string[]=cfg.sigil.map((max, index) => {
