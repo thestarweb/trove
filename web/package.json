@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "trove-tool-by-star_ss",
   "version": "2.0.1",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@thestarweb/trove-lang-tool": "^1.0.0-test2",
-    "@thestarweb/ui": "^1.7.0",
+    "@thestarweb/ui": "^1.7.1",
     "core-js": "^3.15.2",
     "inflation": "^2.0.0",
     "pako": "^2.0.4",

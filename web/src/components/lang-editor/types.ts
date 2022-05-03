@@ -2,7 +2,7 @@ import { LangInfoItem } from '@thestarweb/trove-lang-tool';
 
 export interface OpendFile {
     name:string,
-    srcFile:File,
+    srcFile?:File,
     loaded:boolean,
     data?:LangInfoItem[],
     savedData?:LangInfoItem[],

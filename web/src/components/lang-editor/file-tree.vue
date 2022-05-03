@@ -3,7 +3,7 @@
         <su-tree :tree-data="treeOpendFileData" @node-click="handleNodeClick" />
         <su-modal :visible="editTypeName !== null" @update:visable="editTypeName = null">
             <su-form>
-                <su-form-item label="分类名"><su-input v-model="currentInputName" /></su-form-item>
+                <su-form-item :label="`${editFileName !== null ? '文件' : '分类'}名`"><su-input v-model="currentInputName" /></su-form-item>
             </su-form>
             <su-button @click="handleSubmitTypeName">确认</su-button>
         </su-modal>
@@ -24,13 +24,13 @@ export default class Editor extends Vue {
 		treeBox:HTMLInputElement,
         fileInput: HTMLInputElement,
 	}
-    editTypeName: string|null = null
+    editTypeName: string|null = null;
+    editFileName: string|null = null;
     currentInputName = '';
     currentType = '';
     @Prop()
     opendFiles!:Record<string, OpendFile[]>;
     private get treeOpendFileData(){
-        console.log(this.opendFiles)
         return Object.keys(this.opendFiles).map((typeName) => {
             return {
                 label: typeName,
@@ -68,12 +68,26 @@ export default class Editor extends Vue {
                     this.$refs.fileInput.click();
                 }
             });
-            menu.push({title: '创建分类', click: () => this.editTypeName = ''});
+            menu.push({
+                title: '创建分类',
+                click: () => {
+                    this.editTypeName = '';
+                    this.editFileName = null;
+                }
+            });
         }
         if(path.length === 1){
             menu.push({
+                title: '创建文件',
+                click: () => {
+                    this.editTypeName = this.treeOpendFileData[path[0]].label;
+                    this.editFileName = '';
+                }
+            });
+            menu.push({
                 title: '修改分类名',
                 click: () => {
+                    this.editFileName = null;
                     this.editTypeName = this.treeOpendFileData[path[0]].label;
                     this.currentInputName = this.editTypeName
                 }
@@ -93,11 +107,28 @@ export default class Editor extends Vue {
         if(!this.currentInputName){
             return;
         }
-        if(this.editTypeName && this.editTypeName in this.opendFiles){
-            this.opendFiles[this.currentInputName] = this.opendFiles[this.editTypeName];
-            delete this.opendFiles[this.editTypeName];
-        } else {
-            this.opendFiles[this.currentInputName] = [];
+        if(this.editFileName !== null && this.editTypeName && this.editTypeName in this.opendFiles){
+            if(this.editFileName === ''){
+                this.opendFiles[this.editTypeName].push({
+                    name: this.currentInputName,
+                    data: [],
+                    changeHistory: [],
+                    hasNoSaveChange: false,
+                    loaded: true,
+                });
+            } else {
+                const item = this.opendFiles[this.editTypeName].find(i => i.name == this.editFileName);
+                if(item){
+                    item.name = this.currentInputName;
+                }
+            }
+        }else{
+            if(this.editTypeName && this.editTypeName in this.opendFiles){
+                this.opendFiles[this.currentInputName] = this.opendFiles[this.editTypeName];
+                delete this.opendFiles[this.editTypeName];
+            } else {
+                this.opendFiles[this.currentInputName] = [];
+            }
         }
         this.editTypeName = null;
     }

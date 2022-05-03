@@ -11,7 +11,8 @@
         </div>
         <su-main>
             <div v-if="currentFile" class="file-input-box">
-                <lang-item v-for="item in currentFile.data" :key='item.key' :international="item.key" :value="item.value" @update:value="item.value=$event" />
+                <lang-item v-for="item in currentFile.data" :key='item.key' v-model:international="item.key" :value="item.value" @update:value="item.value=$event" @delete="currentFile.data = currentFile.data.filter(i => i!==item)" />
+                <div class="button-new" @click="handleNewItem">增加一条</div>
             </div>
             <template v-else>
                 no data
@@ -146,6 +147,14 @@ export default class Editor extends Vue {
 		if((!e.dataTransfer)||e.dataTransfer.files.length==0) return;
 		this.loadfiles(e.dataTransfer.files);
     }
+    private handleNewItem():void{
+        if(this.currentFile && this.currentFile.data){
+            this.currentFile.data.push({
+                key: 'new item',
+                value: '',
+            })
+        }
+    }
 }
 </script>
 
@@ -173,5 +182,12 @@ export default class Editor extends Vue {
 .file-input-box{
     overflow: auto;
     height: 100%;
+}
+.button-new{
+    text-align: center;
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 10px;
+    background: rgb(30,30,30);
 }
 </style>
