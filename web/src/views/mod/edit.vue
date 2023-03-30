@@ -8,7 +8,6 @@
 import { Options, Vue } from 'vue-class-component';
 import FileStream from "./test";
 import Pako from "pako";
-import zlib from 'zlib';
 
 @Options({
 })

@@ -11,15 +11,13 @@
     "@thestarweb/trove-lang-tool": "^1.0.0-test2",
     "@thestarweb/ui": "^1.7.1",
     "core-js": "^3.15.2",
-    "inflation": "^2.0.0",
     "pako": "^2.1.0",
     "vue": "^3.1.5",
     "vue-class-component": "^8.0.0-0",
     "vue-i18n": "^9.1.7",
     "vue-property-decorator": "^10.0.0-rc.3",
     "vue-router": "^4.0.10",
-    "vuex": "^4.0.2",
-    "zlib": "^1.0.5"
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/inflation": "^2.0.1",
