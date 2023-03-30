@@ -8,6 +8,7 @@
 import { Options, Vue } from 'vue-class-component';
 import FileStream from "./test";
 import Pako from "pako";
+import zlib from 'zlib';
 
 @Options({
 })
@@ -46,11 +47,13 @@ export default class HelloWorld extends Vue {
 					const value=fs.readStr(fs.readVarInt());
 					console.log(key,'--',value);
 				}
-				// const ubZipFile = Pako.ungzip(fileData.subarray(headerSize));
-					const test=new Pako.Inflate();
-					test.push(fileData.subarray(headerSize));//([(test.result as Uint8Array)],filePath)//
+				// const ubZipFile = Pako.inflate(fileData.subarray(headerSize));
+				// console.log(ubZipFile);
+					const test=new Pako.Inflate({chunkSize: 4096});
+					test.push((new Uint8Array(reader.result as ArrayBuffer)).subarray(headerSize));//([(test.result as Uint8Array)],filePath)//
 					test.onEnd(0);
-					console.log(test.result);
+					console.log(fileData.subarray(headerSize),test.result, test.err);
+					console.log(test)
 				const ubZipFile = test.result;
 
 				while(fs.offset<headerSize){
@@ -62,6 +65,7 @@ export default class HelloWorld extends Vue {
 					// console.log(Pako.ungzip(fileData.subarray(headerSize+byteOffset)));
 					const file = new File([(ubZipFile as Uint8Array).subarray(byteOffset,byteOffset+size)],filePath);
 					if(filePath.endsWith("png")){
+						console.log(byteOffset+size, byteOffset+size)
 					this.test=URL.createObjectURL(file);
 					}
 					console.log({

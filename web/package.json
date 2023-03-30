@@ -12,7 +12,7 @@
     "@thestarweb/ui": "^1.7.1",
     "core-js": "^3.15.2",
     "inflation": "^2.0.0",
-    "pako": "^2.0.4",
+    "pako": "^2.1.0",
     "vue": "^3.1.5",
     "vue-class-component": "^8.0.0-0",
     "vue-i18n": "^9.1.7",
